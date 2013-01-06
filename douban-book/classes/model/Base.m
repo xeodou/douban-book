@@ -9,5 +9,5 @@
 #import "Base.h"
 
 @implementation Base
-
+@synthesize mllId, mstrName;
 @end

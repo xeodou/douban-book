@@ -10,4 +10,7 @@
 
 @interface Base : NSObject
 
+@property (nonatomic) long long mllId;
+@property (nonatomic, strong) NSString* mstrName;
+
 @end

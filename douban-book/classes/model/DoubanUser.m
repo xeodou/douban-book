@@ -10,4 +10,5 @@
 
 @implementation DoubanUser
 
+@synthesize mstrRelation, mstrCreated, mstrLocid, mstrLocname, mstrDesc;
 @end

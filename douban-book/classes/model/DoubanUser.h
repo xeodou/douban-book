@@ -7,7 +7,13 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "User.h"
 
-@interface DoubanUser : NSObject
+@interface DoubanUser : User
 
+@property (nonatomic, strong) NSString* mstrRelation;
+@property (nonatomic, strong) NSString* mstrCreated;
+@property (nonatomic) long mstrLocid;
+@property (nonatomic, strong) NSString* mstrLocname;
+@property (nonatomic, strong) NSString* mstrDesc;
 @end

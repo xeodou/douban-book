@@ -9,18 +9,6 @@
 
 #import <TargetConditionals.h>
 
-#ifdef __OBJC_GC__
-#error SDWebImage does not support Objective-C Garbage Collection
-#endif
-
-#if !__has_feature(objc_arc)
-#error SDWebImage is ARC only. Either turn on ARC for the project or use -fobjc-arc flag
-#endif
-
-#if __IPHONE_OS_VERSION_MIN_REQUIRED < __IPHONE_5_0
-#error SDWebImage doesn't support Deployement Target version < 5.0
-#endif
-
 #if !TARGET_OS_IPHONE
 #import <AppKit/AppKit.h>
 #ifndef UIImage
@@ -33,29 +21,33 @@
 #import <UIKit/UIKit.h>
 #endif
 
-// @see https://github.com/ccgus/fmdb/commit/aef763eeb64e6fa654e7d121f1df4c16a98d9f4f
-#define SDDispatchQueueRelease(q) (dispatch_release(q))
-#if TARGET_OS_IPHONE
-    #if __IPHONE_OS_VERSION_MIN_REQUIRED >= 60000
-        #undef SDDispatchQueueRelease
-        #define SDDispatchQueueRelease(q)
-        #undef SDDispatchQueueSetterSementics
-        #define SDDispatchQueueSetterSementics strong
-    #endif
+#if ! __has_feature(objc_arc)
+#define SDWIAutorelease(__v) ([__v autorelease]);
+#define SDWIReturnAutoreleased SDWIAutorelease
+
+#define SDWIRetain(__v) ([__v retain]);
+#define SDWIReturnRetained SDWIRetain
+
+#define SDWIRelease(__v) ([__v release]);
+#define SDWISafeRelease(__v) ([__v release], __v = nil);
+#define SDWISuperDealoc [super dealloc];
+
+#define SDWIWeak
 #else
-    #if MAC_OS_X_VERSION_MIN_REQUIRED >= 1080
-        #undef SDDispatchQueueRelease
-        #define SDDispatchQueueRelease(q)
-        #undef SDDispatchQueueSetterSementics
-        #define SDDispatchQueueSetterSementics strong
-    #endif
+// -fobjc-arc
+#define SDWIAutorelease(__v)
+#define SDWIReturnAutoreleased(__v) (__v)
+
+#define SDWIRetain(__v)
+#define SDWIReturnRetained(__v) (__v)
+
+#define SDWIRelease(__v)
+#define SDWISafeRelease(__v) (__v = nil);
+#define SDWISuperDealoc
+
+#define SDWIWeak __unsafe_unretained
 #endif
 
-#if OS_OBJECT_USE_OBJC
-    #define SDDispatchQueueSetterSementics strong
-#else
-    #define SDDispatchQueueSetterSementics assign
-#endif
 
 NS_INLINE UIImage *SDScaledImageForPath(NSString *path, NSObject *imageOrData)
 {
@@ -71,7 +63,7 @@ NS_INLINE UIImage *SDScaledImageForPath(NSString *path, NSObject *imageOrData)
     }
     else if ([imageOrData isKindOfClass:[UIImage class]])
     {
-        image = (UIImage *)imageOrData;
+        image = SDWIReturnRetained((UIImage *)imageOrData);
     }
     else
     {
@@ -92,8 +84,9 @@ NS_INLINE UIImage *SDScaledImageForPath(NSString *path, NSObject *imageOrData)
         }
 
         UIImage *scaledImage = [[UIImage alloc] initWithCGImage:image.CGImage scale:scale orientation:image.imageOrientation];
+        SDWISafeRelease(image)
         image = scaledImage;
     }
 
-    return image;
+    return SDWIReturnAutoreleased(image);
 }

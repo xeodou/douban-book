@@ -7,7 +7,12 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "Base.h"
 
-@interface User : NSObject
+@interface User : Base
 
+@property (nonatomic, strong) NSString* mstrUid;
+@property (nonatomic, strong) NSString* mstrAvatar;
+@property (nonatomic, strong) NSString* mstrAlt;
+    
 @end

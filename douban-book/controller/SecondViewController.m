@@ -20,6 +20,11 @@
 	// Do any additional setup after loading the view, typically from a nib.
 }
 
+- (void)viewDidAppear:(BOOL)animated
+{
+    [self.parentViewController.navigationItem setLeftBarButtonItem:nil];
+}
+
 - (void)viewDidUnload
 {
     [super viewDidUnload];

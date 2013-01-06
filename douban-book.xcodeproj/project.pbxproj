@@ -7,6 +7,42 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E62DD0D216982D4400023018 /* TFHpple.m in Sources */ = {isa = PBXBuildFile; fileRef = E62DD0CD16982D4400023018 /* TFHpple.m */; };
+		E62DD0D316982D4400023018 /* TFHppleElement.m in Sources */ = {isa = PBXBuildFile; fileRef = E62DD0CF16982D4400023018 /* TFHppleElement.m */; };
+		E62DD0D416982D4400023018 /* XPathQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = E62DD0D116982D4400023018 /* XPathQuery.m */; };
+		E62DD0D616982E0600023018 /* libxml2.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E62DD0D516982E0600023018 /* libxml2.2.dylib */; };
+		E62DD1011698480D00023018 /* HTMLNode.m in Sources */ = {isa = PBXBuildFile; fileRef = E62DD0FE1698480D00023018 /* HTMLNode.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		E62DD1021698480D00023018 /* HTMLParser.m in Sources */ = {isa = PBXBuildFile; fileRef = E62DD1001698480D00023018 /* HTMLParser.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		E67618F1168CA4A2003ECA9D /* CustomGridCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E67618F0168CA4A2003ECA9D /* CustomGridCell.m */; };
+		E678E1BF168EBF46000C9EF0 /* DoubanUser.m in Sources */ = {isa = PBXBuildFile; fileRef = E678E1BE168EBF46000C9EF0 /* DoubanUser.m */; };
+		E678E1C2168EC47B000C9EF0 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = E678E1C1168EC47B000C9EF0 /* User.m */; };
+		E678E1C9168ED0FF000C9EF0 /* Base.m in Sources */ = {isa = PBXBuildFile; fileRef = E678E1C8168ED0FF000C9EF0 /* Base.m */; };
+		E678E1CD168ED7B8000C9EF0 /* DoubanBook.m in Sources */ = {isa = PBXBuildFile; fileRef = E678E1CC168ED7B8000C9EF0 /* DoubanBook.m */; };
+		E678E1D0168EDB65000C9EF0 /* Rate.m in Sources */ = {isa = PBXBuildFile; fileRef = E678E1CF168EDB65000C9EF0 /* Rate.m */; };
+		E678E1D3168EE420000C9EF0 /* Tag.m in Sources */ = {isa = PBXBuildFile; fileRef = E678E1D2168EE420000C9EF0 /* Tag.m */; };
+		E678E1DA168EE568000C9EF0 /* BookReview.m in Sources */ = {isa = PBXBuildFile; fileRef = E678E1D9168EE568000C9EF0 /* BookReview.m */; };
+		E678E1DE168EE82A000C9EF0 /* Collection.m in Sources */ = {isa = PBXBuildFile; fileRef = E678E1DD168EE82A000C9EF0 /* Collection.m */; };
+		E678E1E1168EE9EE000C9EF0 /* Annotation.m in Sources */ = {isa = PBXBuildFile; fileRef = E678E1E0168EE9EE000C9EF0 /* Annotation.m */; };
+		E67933821697F6B6009424B2 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E67933811697F6B6009424B2 /* libxml2.dylib */; };
+		E67933841697F6CF009424B2 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E67933831697F6CF009424B2 /* libz.dylib */; };
+		E67933861697F6DD009424B2 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E67933851697F6DD009424B2 /* CFNetwork.framework */; };
+		E67933881697F6E6009424B2 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E67933871697F6E6009424B2 /* Security.framework */; };
+		E679338A1697F6F1009424B2 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E67933891697F6F1009424B2 /* SystemConfiguration.framework */; };
+		E679338C1697F6FA009424B2 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E679338B1697F6FA009424B2 /* MobileCoreServices.framework */; };
+		E68194E716994B4E0043B5AF /* libDoubanAPIEngine.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E68194E4169945740043B5AF /* libDoubanAPIEngine.a */; };
+		E68194F5169976A90043B5AF /* DropDownView.m in Sources */ = {isa = PBXBuildFile; fileRef = E68194F4169976A90043B5AF /* DropDownView.m */; };
+		E6827839168DF3F100FCA7A2 /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = E6827838168DF3F100FCA7A2 /* JSONKit.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		E682783D168DF7A000FCA7A2 /* MTStatusBarOverlay.m in Sources */ = {isa = PBXBuildFile; fileRef = E682783C168DF7A000FCA7A2 /* MTStatusBarOverlay.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		E6827841168DF87C00FCA7A2 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = E6827840168DF87C00FCA7A2 /* MBProgressHUD.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		E6827887168E01D300FCA7A2 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6827886168E01D300FCA7A2 /* ImageIO.framework */; };
+		E684630216988CDC00E5B303 /* SDWebImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E684630116988CDC00E5B303 /* SDWebImage.framework */; };
+		E6ACF4B0168B4C9100C249FC /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E6ACF4AD168B4C9100C249FC /* FirstViewController.m */; };
+		E6ACF4B1168B4C9100C249FC /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E6ACF4AF168B4C9100C249FC /* SecondViewController.m */; };
+		E6ACF4B8168B4CC700C249FC /* first.png in Resources */ = {isa = PBXBuildFile; fileRef = E6ACF4B3168B4CC700C249FC /* first.png */; };
+		E6ACF4B9168B4CC700C249FC /* first@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E6ACF4B4168B4CC700C249FC /* first@2x.png */; };
+		E6ACF4BA168B4CC700C249FC /* second.png in Resources */ = {isa = PBXBuildFile; fileRef = E6ACF4B5168B4CC700C249FC /* second.png */; };
+		E6ACF4BB168B4CC700C249FC /* second@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E6ACF4B6168B4CC700C249FC /* second@2x.png */; };
+		E6ACF4BE168B4D2B00C249FC /* ThridViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E6ACF4BD168B4D2B00C249FC /* ThridViewController.m */; };
 		E6F488DC1670F0B4000B15B2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6F488DB1670F0B4000B15B2 /* UIKit.framework */; };
 		E6F488DE1670F0B4000B15B2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6F488DD1670F0B4000B15B2 /* Foundation.framework */; };
 		E6F488E01670F0B4000B15B2 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6F488DF1670F0B4000B15B2 /* CoreGraphics.framework */; };
@@ -14,55 +50,96 @@
 		E6F488E81670F0B4000B15B2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E6F488E71670F0B4000B15B2 /* main.m */; };
 		E6F488EC1670F0B4000B15B2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E6F488EB1670F0B4000B15B2 /* AppDelegate.m */; };
 		E6F488EF1670F0B4000B15B2 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E6F488ED1670F0B4000B15B2 /* MainStoryboard.storyboard */; };
-		E6F488F21670F0B4000B15B2 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E6F488F11670F0B4000B15B2 /* FirstViewController.m */; };
-		E6F488F41670F0B4000B15B2 /* first.png in Resources */ = {isa = PBXBuildFile; fileRef = E6F488F31670F0B4000B15B2 /* first.png */; };
-		E6F488F61670F0B4000B15B2 /* first@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E6F488F51670F0B4000B15B2 /* first@2x.png */; };
-		E6F488F91670F0B4000B15B2 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E6F488F81670F0B4000B15B2 /* SecondViewController.m */; };
-		E6F488FB1670F0B4000B15B2 /* second.png in Resources */ = {isa = PBXBuildFile; fileRef = E6F488FA1670F0B4000B15B2 /* second.png */; };
-		E6F488FD1670F0B4000B15B2 /* second@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E6F488FC1670F0B4000B15B2 /* second@2x.png */; };
-		E6F489051670F0B5000B15B2 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6F489041670F0B5000B15B2 /* SenTestingKit.framework */; };
-		E6F489061670F0B5000B15B2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6F488DB1670F0B4000B15B2 /* UIKit.framework */; };
-		E6F489071670F0B5000B15B2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6F488DD1670F0B4000B15B2 /* Foundation.framework */; };
-		E6F4890F1670F0B5000B15B2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E6F4890D1670F0B5000B15B2 /* InfoPlist.strings */; };
-		E6F489121670F0B5000B15B2 /* douban_bookTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E6F489111670F0B5000B15B2 /* douban_bookTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		E6F489081670F0B5000B15B2 /* PBXContainerItemProxy */ = {
+		E68194E3169945740043B5AF /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = E6F488CE1670F0B4000B15B2 /* Project object */;
+			containerPortal = E68194DB169945730043B5AF /* DoubanAPIEngine.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D800D538146907B2009F64FD;
+			remoteInfo = DoubanAPIEngine;
+		};
+		E68194E5169949A60043B5AF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E68194DB169945730043B5AF /* DoubanAPIEngine.xcodeproj */;
 			proxyType = 1;
-			remoteGlobalIDString = E6F488D61670F0B4000B15B2;
-			remoteInfo = "douban-book";
+			remoteGlobalIDString = D800D537146907B2009F64FD;
+			remoteInfo = DoubanAPIEngine;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E62DD0CC16982D4400023018 /* TFHpple.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFHpple.h; sourceTree = "<group>"; };
+		E62DD0CD16982D4400023018 /* TFHpple.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFHpple.m; sourceTree = "<group>"; };
+		E62DD0CE16982D4400023018 /* TFHppleElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFHppleElement.h; sourceTree = "<group>"; };
+		E62DD0CF16982D4400023018 /* TFHppleElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFHppleElement.m; sourceTree = "<group>"; };
+		E62DD0D016982D4400023018 /* XPathQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPathQuery.h; sourceTree = "<group>"; };
+		E62DD0D116982D4400023018 /* XPathQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPathQuery.m; sourceTree = "<group>"; };
+		E62DD0D516982E0600023018 /* libxml2.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.2.dylib; path = usr/lib/libxml2.2.dylib; sourceTree = SDKROOT; };
+		E62DD0E7169834C400023018 /* Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Constants.h; path = ../Constants.h; sourceTree = "<group>"; };
+		E62DD0FD1698480D00023018 /* HTMLNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTMLNode.h; sourceTree = "<group>"; };
+		E62DD0FE1698480D00023018 /* HTMLNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTMLNode.m; sourceTree = "<group>"; };
+		E62DD0FF1698480D00023018 /* HTMLParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTMLParser.h; sourceTree = "<group>"; };
+		E62DD1001698480D00023018 /* HTMLParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTMLParser.m; sourceTree = "<group>"; };
+		E67618EF168CA4A2003ECA9D /* CustomGridCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomGridCell.h; sourceTree = "<group>"; };
+		E67618F0168CA4A2003ECA9D /* CustomGridCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomGridCell.m; sourceTree = "<group>"; };
+		E678E1BD168EBF46000C9EF0 /* DoubanUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DoubanUser.h; sourceTree = "<group>"; };
+		E678E1BE168EBF46000C9EF0 /* DoubanUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DoubanUser.m; sourceTree = "<group>"; };
+		E678E1C0168EC47B000C9EF0 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		E678E1C1168EC47B000C9EF0 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
+		E678E1C7168ED0FF000C9EF0 /* Base.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Base.h; sourceTree = "<group>"; };
+		E678E1C8168ED0FF000C9EF0 /* Base.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Base.m; sourceTree = "<group>"; };
+		E678E1CB168ED7B8000C9EF0 /* DoubanBook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DoubanBook.h; sourceTree = "<group>"; };
+		E678E1CC168ED7B8000C9EF0 /* DoubanBook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DoubanBook.m; sourceTree = "<group>"; };
+		E678E1CE168EDB65000C9EF0 /* Rate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Rate.h; sourceTree = "<group>"; };
+		E678E1CF168EDB65000C9EF0 /* Rate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Rate.m; sourceTree = "<group>"; };
+		E678E1D1168EE420000C9EF0 /* Tag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tag.h; sourceTree = "<group>"; };
+		E678E1D2168EE420000C9EF0 /* Tag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tag.m; sourceTree = "<group>"; };
+		E678E1D8168EE568000C9EF0 /* BookReview.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookReview.h; sourceTree = "<group>"; };
+		E678E1D9168EE568000C9EF0 /* BookReview.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookReview.m; sourceTree = "<group>"; };
+		E678E1DC168EE82A000C9EF0 /* Collection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Collection.h; sourceTree = "<group>"; };
+		E678E1DD168EE82A000C9EF0 /* Collection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Collection.m; sourceTree = "<group>"; };
+		E678E1DF168EE9EE000C9EF0 /* Annotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Annotation.h; sourceTree = "<group>"; };
+		E678E1E0168EE9EE000C9EF0 /* Annotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Annotation.m; sourceTree = "<group>"; };
+		E67933811697F6B6009424B2 /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
+		E67933831697F6CF009424B2 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		E67933851697F6DD009424B2 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		E67933871697F6E6009424B2 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		E67933891697F6F1009424B2 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		E679338B1697F6FA009424B2 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		E68194DB169945730043B5AF /* DoubanAPIEngine.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = DoubanAPIEngine.xcodeproj; sourceTree = "<group>"; };
+		E68194F3169976A90043B5AF /* DropDownView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DropDownView.h; sourceTree = "<group>"; };
+		E68194F4169976A90043B5AF /* DropDownView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DropDownView.m; sourceTree = "<group>"; };
+		E6827837168DF3F100FCA7A2 /* JSONKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONKit.h; sourceTree = "<group>"; };
+		E6827838168DF3F100FCA7A2 /* JSONKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONKit.m; sourceTree = "<group>"; };
+		E682783B168DF7A000FCA7A2 /* MTStatusBarOverlay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTStatusBarOverlay.h; sourceTree = "<group>"; };
+		E682783C168DF7A000FCA7A2 /* MTStatusBarOverlay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTStatusBarOverlay.m; sourceTree = "<group>"; };
+		E682783F168DF87C00FCA7A2 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		E6827840168DF87C00FCA7A2 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		E6827886168E01D300FCA7A2 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		E684630116988CDC00E5B303 /* SDWebImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SDWebImage.framework; sourceTree = "<group>"; };
+		E6ACF4AC168B4C9100C249FC /* FirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
+		E6ACF4AD168B4C9100C249FC /* FirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
+		E6ACF4AE168B4C9100C249FC /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		E6ACF4AF168B4C9100C249FC /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		E6ACF4B3168B4CC700C249FC /* first.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = first.png; sourceTree = "<group>"; };
+		E6ACF4B4168B4CC700C249FC /* first@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "first@2x.png"; sourceTree = "<group>"; };
+		E6ACF4B5168B4CC700C249FC /* second.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = second.png; sourceTree = "<group>"; };
+		E6ACF4B6168B4CC700C249FC /* second@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "second@2x.png"; sourceTree = "<group>"; };
+		E6ACF4BC168B4D2B00C249FC /* ThridViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThridViewController.h; sourceTree = "<group>"; };
+		E6ACF4BD168B4D2B00C249FC /* ThridViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThridViewController.m; sourceTree = "<group>"; };
 		E6F488D71670F0B4000B15B2 /* douban-book.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "douban-book.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6F488DB1670F0B4000B15B2 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		E6F488DD1670F0B4000B15B2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		E6F488DF1670F0B4000B15B2 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		E6F488E31670F0B4000B15B2 /* douban-book-Info.plist */ = {isa = PBXFileReference; path = "douban-book-Info.plist"; sourceTree = "<group>"; };
+		E6F488E31670F0B4000B15B2 /* douban-book-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "douban-book-Info.plist"; sourceTree = "<group>"; };
 		E6F488E51670F0B4000B15B2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		E6F488E71670F0B4000B15B2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		E6F488E91670F0B4000B15B2 /* douban-book-Prefix.pch */ = {isa = PBXFileReference; path = "douban-book-Prefix.pch"; sourceTree = "<group>"; };
-		E6F488EA1670F0B4000B15B2 /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		E6F488E91670F0B4000B15B2 /* douban-book-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "douban-book-Prefix.pch"; sourceTree = "<group>"; };
+		E6F488EA1670F0B4000B15B2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		E6F488EB1670F0B4000B15B2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		E6F488EE1670F0B4000B15B2 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
-		E6F488F01670F0B4000B15B2 /* FirstViewController.h */ = {isa = PBXFileReference; path = FirstViewController.h; sourceTree = "<group>"; };
-		E6F488F11670F0B4000B15B2 /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
-		E6F488F31670F0B4000B15B2 /* first.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = first.png; sourceTree = "<group>"; };
-		E6F488F51670F0B4000B15B2 /* first@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "first@2x.png"; sourceTree = "<group>"; };
-		E6F488F71670F0B4000B15B2 /* SecondViewController.h */ = {isa = PBXFileReference; path = SecondViewController.h; sourceTree = "<group>"; };
-		E6F488F81670F0B4000B15B2 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
-		E6F488FA1670F0B4000B15B2 /* second.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = second.png; sourceTree = "<group>"; };
-		E6F488FC1670F0B4000B15B2 /* second@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "second@2x.png"; sourceTree = "<group>"; };
-		E6F489031670F0B5000B15B2 /* douban-bookTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "douban-bookTests.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		E6F489041670F0B5000B15B2 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		E6F4890C1670F0B5000B15B2 /* douban-bookTests-Info.plist */ = {isa = PBXFileReference; path = "douban-bookTests-Info.plist"; sourceTree = "<group>"; };
-		E6F4890E1670F0B5000B15B2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		E6F489101670F0B5000B15B2 /* douban_bookTests.h */ = {isa = PBXFileReference; path = douban_bookTests.h; sourceTree = "<group>"; };
-		E6F489111670F0B5000B15B2 /* douban_bookTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = douban_bookTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,30 +147,177 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E68194E716994B4E0043B5AF /* libDoubanAPIEngine.a in Frameworks */,
+				E62DD0D616982E0600023018 /* libxml2.2.dylib in Frameworks */,
+				E679338C1697F6FA009424B2 /* MobileCoreServices.framework in Frameworks */,
+				E679338A1697F6F1009424B2 /* SystemConfiguration.framework in Frameworks */,
+				E67933881697F6E6009424B2 /* Security.framework in Frameworks */,
+				E67933861697F6DD009424B2 /* CFNetwork.framework in Frameworks */,
+				E67933841697F6CF009424B2 /* libz.dylib in Frameworks */,
+				E67933821697F6B6009424B2 /* libxml2.dylib in Frameworks */,
 				E6F488DC1670F0B4000B15B2 /* UIKit.framework in Frameworks */,
 				E6F488DE1670F0B4000B15B2 /* Foundation.framework in Frameworks */,
 				E6F488E01670F0B4000B15B2 /* CoreGraphics.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E6F488FF1670F0B5000B15B2 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E6F489051670F0B5000B15B2 /* SenTestingKit.framework in Frameworks */,
-				E6F489061670F0B5000B15B2 /* UIKit.framework in Frameworks */,
-				E6F489071670F0B5000B15B2 /* Foundation.framework in Frameworks */,
+				E6827887168E01D300FCA7A2 /* ImageIO.framework in Frameworks */,
+				E684630216988CDC00E5B303 /* SDWebImage.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E62DD0CB16982D4400023018 /* hpple */ = {
+			isa = PBXGroup;
+			children = (
+				E62DD0CC16982D4400023018 /* TFHpple.h */,
+				E62DD0CD16982D4400023018 /* TFHpple.m */,
+				E62DD0CE16982D4400023018 /* TFHppleElement.h */,
+				E62DD0CF16982D4400023018 /* TFHppleElement.m */,
+				E62DD0D016982D4400023018 /* XPathQuery.h */,
+				E62DD0D116982D4400023018 /* XPathQuery.m */,
+			);
+			path = hpple;
+			sourceTree = "<group>";
+		};
+		E62DD0FC1698480D00023018 /* HTMLParser */ = {
+			isa = PBXGroup;
+			children = (
+				E62DD0FD1698480D00023018 /* HTMLNode.h */,
+				E62DD0FE1698480D00023018 /* HTMLNode.m */,
+				E62DD0FF1698480D00023018 /* HTMLParser.h */,
+				E62DD1001698480D00023018 /* HTMLParser.m */,
+			);
+			path = HTMLParser;
+			sourceTree = "<group>";
+		};
+		E678E1BB168EBEC7000C9EF0 /* classes */ = {
+			isa = PBXGroup;
+			children = (
+				E678E1BC168EBEC7000C9EF0 /* model */,
+			);
+			path = classes;
+			sourceTree = "<group>";
+		};
+		E678E1BC168EBEC7000C9EF0 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				E678E1BD168EBF46000C9EF0 /* DoubanUser.h */,
+				E678E1BE168EBF46000C9EF0 /* DoubanUser.m */,
+				E678E1C0168EC47B000C9EF0 /* User.h */,
+				E678E1C1168EC47B000C9EF0 /* User.m */,
+				E678E1C7168ED0FF000C9EF0 /* Base.h */,
+				E678E1C8168ED0FF000C9EF0 /* Base.m */,
+				E678E1CE168EDB65000C9EF0 /* Rate.h */,
+				E678E1CF168EDB65000C9EF0 /* Rate.m */,
+				E678E1CB168ED7B8000C9EF0 /* DoubanBook.h */,
+				E678E1CC168ED7B8000C9EF0 /* DoubanBook.m */,
+				E678E1D1168EE420000C9EF0 /* Tag.h */,
+				E678E1D2168EE420000C9EF0 /* Tag.m */,
+				E678E1D8168EE568000C9EF0 /* BookReview.h */,
+				E678E1D9168EE568000C9EF0 /* BookReview.m */,
+				E678E1DC168EE82A000C9EF0 /* Collection.h */,
+				E678E1DD168EE82A000C9EF0 /* Collection.m */,
+				E678E1DF168EE9EE000C9EF0 /* Annotation.h */,
+				E678E1E0168EE9EE000C9EF0 /* Annotation.m */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		E681925A16992F4B0043B5AF /* Douban */ = {
+			isa = PBXGroup;
+			children = (
+				E68194DB169945730043B5AF /* DoubanAPIEngine.xcodeproj */,
+			);
+			path = Douban;
+			sourceTree = "<group>";
+		};
+		E68194DC169945730043B5AF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E68194E4169945740043B5AF /* libDoubanAPIEngine.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E6827834168DF2D500FCA7A2 /* frame */ = {
+			isa = PBXGroup;
+			children = (
+				E681925A16992F4B0043B5AF /* Douban */,
+				E62DD0FC1698480D00023018 /* HTMLParser */,
+				E62DD0CB16982D4400023018 /* hpple */,
+				E682783E168DF87C00FCA7A2 /* MBProgressHUD */,
+				E682783A168DF7A000FCA7A2 /* MTStatusBar */,
+				E6827836168DF3F100FCA7A2 /* jsonkit */,
+			);
+			path = frame;
+			sourceTree = "<group>";
+		};
+		E6827836168DF3F100FCA7A2 /* jsonkit */ = {
+			isa = PBXGroup;
+			children = (
+				E6827837168DF3F100FCA7A2 /* JSONKit.h */,
+				E6827838168DF3F100FCA7A2 /* JSONKit.m */,
+			);
+			path = jsonkit;
+			sourceTree = "<group>";
+		};
+		E682783A168DF7A000FCA7A2 /* MTStatusBar */ = {
+			isa = PBXGroup;
+			children = (
+				E682783B168DF7A000FCA7A2 /* MTStatusBarOverlay.h */,
+				E682783C168DF7A000FCA7A2 /* MTStatusBarOverlay.m */,
+			);
+			path = MTStatusBar;
+			sourceTree = "<group>";
+		};
+		E682783E168DF87C00FCA7A2 /* MBProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				E682783F168DF87C00FCA7A2 /* MBProgressHUD.h */,
+				E6827840168DF87C00FCA7A2 /* MBProgressHUD.m */,
+			);
+			path = MBProgressHUD;
+			sourceTree = "<group>";
+		};
+		E6ACF4AB168B4C9100C249FC /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				E6ACF4AC168B4C9100C249FC /* FirstViewController.h */,
+				E6ACF4AD168B4C9100C249FC /* FirstViewController.m */,
+				E6ACF4AE168B4C9100C249FC /* SecondViewController.h */,
+				E6ACF4AF168B4C9100C249FC /* SecondViewController.m */,
+				E6ACF4BC168B4D2B00C249FC /* ThridViewController.h */,
+				E6ACF4BD168B4D2B00C249FC /* ThridViewController.m */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		E6ACF4B2168B4CC700C249FC /* images */ = {
+			isa = PBXGroup;
+			children = (
+				E6ACF4B3168B4CC700C249FC /* first.png */,
+				E6ACF4B4168B4CC700C249FC /* first@2x.png */,
+				E6ACF4B5168B4CC700C249FC /* second.png */,
+				E6ACF4B6168B4CC700C249FC /* second@2x.png */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
+		E6ACF4B7168B4CC700C249FC /* view */ = {
+			isa = PBXGroup;
+			children = (
+				E67618EF168CA4A2003ECA9D /* CustomGridCell.h */,
+				E67618F0168CA4A2003ECA9D /* CustomGridCell.m */,
+				E68194F3169976A90043B5AF /* DropDownView.h */,
+				E68194F4169976A90043B5AF /* DropDownView.m */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
 		E6F488CC1670F0B4000B15B2 = {
 			isa = PBXGroup;
 			children = (
 				E6F488E11670F0B4000B15B2 /* douban-book */,
-				E6F4890A1670F0B5000B15B2 /* douban-bookTests */,
 				E6F488DA1670F0B4000B15B2 /* Frameworks */,
 				E6F488D81670F0B4000B15B2 /* Products */,
 			);
@@ -103,7 +327,6 @@
 			isa = PBXGroup;
 			children = (
 				E6F488D71670F0B4000B15B2 /* douban-book.app */,
-				E6F489031670F0B5000B15B2 /* douban-bookTests.octest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -111,10 +334,18 @@
 		E6F488DA1670F0B4000B15B2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				E684630116988CDC00E5B303 /* SDWebImage.framework */,
+				E62DD0D516982E0600023018 /* libxml2.2.dylib */,
+				E679338B1697F6FA009424B2 /* MobileCoreServices.framework */,
+				E67933891697F6F1009424B2 /* SystemConfiguration.framework */,
+				E67933871697F6E6009424B2 /* Security.framework */,
+				E67933851697F6DD009424B2 /* CFNetwork.framework */,
+				E67933831697F6CF009424B2 /* libz.dylib */,
+				E67933811697F6B6009424B2 /* libxml2.dylib */,
+				E6827886168E01D300FCA7A2 /* ImageIO.framework */,
 				E6F488DB1670F0B4000B15B2 /* UIKit.framework */,
 				E6F488DD1670F0B4000B15B2 /* Foundation.framework */,
 				E6F488DF1670F0B4000B15B2 /* CoreGraphics.framework */,
-				E6F489041670F0B5000B15B2 /* SenTestingKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -122,17 +353,15 @@
 		E6F488E11670F0B4000B15B2 /* douban-book */ = {
 			isa = PBXGroup;
 			children = (
+				E678E1BB168EBEC7000C9EF0 /* classes */,
+				E6827834168DF2D500FCA7A2 /* frame */,
+				E6ACF4B2168B4CC700C249FC /* images */,
+				E6ACF4B7168B4CC700C249FC /* view */,
+				E6ACF4AB168B4C9100C249FC /* controller */,
 				E6F488EA1670F0B4000B15B2 /* AppDelegate.h */,
 				E6F488EB1670F0B4000B15B2 /* AppDelegate.m */,
+				E62DD0E7169834C400023018 /* Constants.h */,
 				E6F488ED1670F0B4000B15B2 /* MainStoryboard.storyboard */,
-				E6F488F01670F0B4000B15B2 /* FirstViewController.h */,
-				E6F488F11670F0B4000B15B2 /* FirstViewController.m */,
-				E6F488F31670F0B4000B15B2 /* first.png */,
-				E6F488F51670F0B4000B15B2 /* first@2x.png */,
-				E6F488F71670F0B4000B15B2 /* SecondViewController.h */,
-				E6F488F81670F0B4000B15B2 /* SecondViewController.m */,
-				E6F488FA1670F0B4000B15B2 /* second.png */,
-				E6F488FC1670F0B4000B15B2 /* second@2x.png */,
 				E6F488E21670F0B4000B15B2 /* Supporting Files */,
 			);
 			path = "douban-book";
@@ -145,25 +374,6 @@
 				E6F488E41670F0B4000B15B2 /* InfoPlist.strings */,
 				E6F488E71670F0B4000B15B2 /* main.m */,
 				E6F488E91670F0B4000B15B2 /* douban-book-Prefix.pch */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		E6F4890A1670F0B5000B15B2 /* douban-bookTests */ = {
-			isa = PBXGroup;
-			children = (
-				E6F489101670F0B5000B15B2 /* douban_bookTests.h */,
-				E6F489111670F0B5000B15B2 /* douban_bookTests.m */,
-				E6F4890B1670F0B5000B15B2 /* Supporting Files */,
-			);
-			path = "douban-bookTests";
-			sourceTree = "<group>";
-		};
-		E6F4890B1670F0B5000B15B2 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				E6F4890C1670F0B5000B15B2 /* douban-bookTests-Info.plist */,
-				E6F4890D1670F0B5000B15B2 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -182,30 +392,12 @@
 			buildRules = (
 			);
 			dependencies = (
+				E68194E6169949A60043B5AF /* PBXTargetDependency */,
 			);
 			name = "douban-book";
 			productName = "douban-book";
 			productReference = E6F488D71670F0B4000B15B2 /* douban-book.app */;
 			productType = "com.apple.product-type.application";
-		};
-		E6F489021670F0B5000B15B2 /* douban-bookTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = E6F489181670F0B5000B15B2 /* Build configuration list for PBXNativeTarget "douban-bookTests" */;
-			buildPhases = (
-				E6F488FE1670F0B5000B15B2 /* Sources */,
-				E6F488FF1670F0B5000B15B2 /* Frameworks */,
-				E6F489001670F0B5000B15B2 /* Resources */,
-				E6F489011670F0B5000B15B2 /* ShellScript */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				E6F489091670F0B5000B15B2 /* PBXTargetDependency */,
-			);
-			name = "douban-bookTests";
-			productName = "douban-bookTests";
-			productReference = E6F489031670F0B5000B15B2 /* douban-bookTests.octest */;
-			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */
 
@@ -225,13 +417,28 @@
 			mainGroup = E6F488CC1670F0B4000B15B2;
 			productRefGroup = E6F488D81670F0B4000B15B2 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = E68194DC169945730043B5AF /* Products */;
+					ProjectRef = E68194DB169945730043B5AF /* DoubanAPIEngine.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				E6F488D61670F0B4000B15B2 /* douban-book */,
-				E6F489021670F0B5000B15B2 /* douban-bookTests */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		E68194E4169945740043B5AF /* libDoubanAPIEngine.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libDoubanAPIEngine.a;
+			remoteRef = E68194E3169945740043B5AF /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		E6F488D51670F0B4000B15B2 /* Resources */ = {
@@ -240,38 +447,14 @@
 			files = (
 				E6F488E61670F0B4000B15B2 /* InfoPlist.strings in Resources */,
 				E6F488EF1670F0B4000B15B2 /* MainStoryboard.storyboard in Resources */,
-				E6F488F41670F0B4000B15B2 /* first.png in Resources */,
-				E6F488F61670F0B4000B15B2 /* first@2x.png in Resources */,
-				E6F488FB1670F0B4000B15B2 /* second.png in Resources */,
-				E6F488FD1670F0B4000B15B2 /* second@2x.png in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E6F489001670F0B5000B15B2 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E6F4890F1670F0B5000B15B2 /* InfoPlist.strings in Resources */,
+				E6ACF4B8168B4CC700C249FC /* first.png in Resources */,
+				E6ACF4B9168B4CC700C249FC /* first@2x.png in Resources */,
+				E6ACF4BA168B4CC700C249FC /* second.png in Resources */,
+				E6ACF4BB168B4CC700C249FC /* second@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		E6F489011670F0B5000B15B2 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E6F488D31670F0B4000B15B2 /* Sources */ = {
@@ -280,26 +463,38 @@
 			files = (
 				E6F488E81670F0B4000B15B2 /* main.m in Sources */,
 				E6F488EC1670F0B4000B15B2 /* AppDelegate.m in Sources */,
-				E6F488F21670F0B4000B15B2 /* FirstViewController.m in Sources */,
-				E6F488F91670F0B4000B15B2 /* SecondViewController.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E6F488FE1670F0B5000B15B2 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E6F489121670F0B5000B15B2 /* douban_bookTests.m in Sources */,
+				E6ACF4B0168B4C9100C249FC /* FirstViewController.m in Sources */,
+				E6ACF4B1168B4C9100C249FC /* SecondViewController.m in Sources */,
+				E6ACF4BE168B4D2B00C249FC /* ThridViewController.m in Sources */,
+				E67618F1168CA4A2003ECA9D /* CustomGridCell.m in Sources */,
+				E6827839168DF3F100FCA7A2 /* JSONKit.m in Sources */,
+				E682783D168DF7A000FCA7A2 /* MTStatusBarOverlay.m in Sources */,
+				E6827841168DF87C00FCA7A2 /* MBProgressHUD.m in Sources */,
+				E678E1BF168EBF46000C9EF0 /* DoubanUser.m in Sources */,
+				E678E1C2168EC47B000C9EF0 /* User.m in Sources */,
+				E678E1C9168ED0FF000C9EF0 /* Base.m in Sources */,
+				E678E1CD168ED7B8000C9EF0 /* DoubanBook.m in Sources */,
+				E678E1D0168EDB65000C9EF0 /* Rate.m in Sources */,
+				E678E1D3168EE420000C9EF0 /* Tag.m in Sources */,
+				E678E1DA168EE568000C9EF0 /* BookReview.m in Sources */,
+				E678E1DE168EE82A000C9EF0 /* Collection.m in Sources */,
+				E678E1E1168EE9EE000C9EF0 /* Annotation.m in Sources */,
+				E62DD0D216982D4400023018 /* TFHpple.m in Sources */,
+				E62DD0D316982D4400023018 /* TFHppleElement.m in Sources */,
+				E62DD0D416982D4400023018 /* XPathQuery.m in Sources */,
+				E62DD1011698480D00023018 /* HTMLNode.m in Sources */,
+				E62DD1021698480D00023018 /* HTMLParser.m in Sources */,
+				E68194F5169976A90043B5AF /* DropDownView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		E6F489091670F0B5000B15B2 /* PBXTargetDependency */ = {
+		E68194E6169949A60043B5AF /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = E6F488D61670F0B4000B15B2 /* douban-book */;
-			targetProxy = E6F489081670F0B5000B15B2 /* PBXContainerItemProxy */;
+			name = DoubanAPIEngine;
+			targetProxy = E68194E5169949A60043B5AF /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -318,14 +513,6 @@
 				E6F488EE1670F0B4000B15B2 /* en */,
 			);
 			name = MainStoryboard.storyboard;
-			sourceTree = "<group>";
-		};
-		E6F4890D1670F0B5000B15B2 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E6F4890E1670F0B5000B15B2 /* en */,
-			);
-			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -379,10 +566,33 @@
 		E6F489161670F0B5000B15B2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+					"\"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/Developer/Library/Frameworks\"",
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "douban-book/douban-book-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"./douban-book/frame/Douban/DoubanAPIEngine/OtherSources/**",
+					"./douban-book/frame/Douban/DoubanAPIEngine/Sources/**",
+					"${SDK_DIR}/usr/include/libxml2",
+					"$(SDKROOT)/usr/include/libxml2",
+				);
 				INFOPLIST_FILE = "douban-book/douban-book-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SDKROOT)/usr/lib/system\"",
+					"\"$(SRCROOT)/build/Debug-iphonesimulator\"",
+				);
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-ObjC",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -390,45 +600,34 @@
 		E6F489171670F0B5000B15B2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+					"\"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/Developer/Library/Frameworks\"",
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "douban-book/douban-book-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"./douban-book/frame/Douban/DoubanAPIEngine/OtherSources/**",
+					"./douban-book/frame/Douban/DoubanAPIEngine/Sources/**",
+					"${SDK_DIR}/usr/include/libxml2",
+					"$(SDKROOT)/usr/include/libxml2",
+				);
 				INFOPLIST_FILE = "douban-book/douban-book-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SDKROOT)/usr/lib/system\"",
+					"\"$(SRCROOT)/build/Debug-iphonesimulator\"",
+				);
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-ObjC",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "";
 				WRAPPER_EXTENSION = app;
-			};
-			name = Release;
-		};
-		E6F489191670F0B5000B15B2 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/douban-book.app/douban-book";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "douban-book/douban-book-Prefix.pch";
-				INFOPLIST_FILE = "douban-bookTests/douban-bookTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = octest;
-			};
-			name = Debug;
-		};
-		E6F4891A1670F0B5000B15B2 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/douban-book.app/douban-book";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "douban-book/douban-book-Prefix.pch";
-				INFOPLIST_FILE = "douban-bookTests/douban-bookTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = octest;
 			};
 			name = Release;
 		};
@@ -451,14 +650,7 @@
 				E6F489171670F0B5000B15B2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-		};
-		E6F489181670F0B5000B15B2 /* Build configuration list for PBXNativeTarget "douban-bookTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				E6F489191670F0B5000B15B2 /* Debug */,
-				E6F4891A1670F0B5000B15B2 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

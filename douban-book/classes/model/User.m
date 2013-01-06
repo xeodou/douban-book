@@ -9,5 +9,5 @@
 #import "User.h"
 
 @implementation User
-
+@synthesize mstrUid, mstrAvatar, mstrAlt;
 @end
