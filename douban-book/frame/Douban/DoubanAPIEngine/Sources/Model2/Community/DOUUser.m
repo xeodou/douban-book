@@ -18,6 +18,7 @@
 @dynamic desc;
 @dynamic locId;
 @dynamic locName;
+@dynamic created;
 
 
 - (NSString *)identifier {
@@ -49,6 +50,9 @@
   return [self.dictionary objectForKey:@"desc"];
 }
 
+- (NSString*) created{
+    return [self.dictionary objectForKey:@"created"];
+}
 
 - (NSString *)locId {
   return [self.dictionary objectForKey:@"loc_id"];

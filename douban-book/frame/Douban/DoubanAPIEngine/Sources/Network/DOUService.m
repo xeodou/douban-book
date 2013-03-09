@@ -261,6 +261,59 @@ static DOUService *myInstance = nil;
 }
 
 
+- (DOUHttpRequest *)postDic:(DOUQuery *)query postBody:(NSMutableDictionary *)body callback:(DOUReqBlock)block {
+    query.apiBaseUrlString = self.apiBaseUrlString;
+    __block DOUHttpRequest * req = [DOUHttpRequest requestWithQuery:query completionBlock:^{
+        if (block != NULL) {
+            block(req);      
+        }
+    }];
+    
+    [req setRequestMethod:@"POST"];
+    [req addRequestHeader:@"Content-Type" value:@"application/x-www-form-urlencoded; charset=UTF-8"];      
+    
+    if (body) {
+        
+        for (NSString *key in [body allKeys] ) {
+            [req addPostValue:[body objectForKey:key] forKey:key];
+        }
+    }
+    else {
+        [req addRequestHeader:@"Content-Length" value:@"0"];
+    }
+    
+    [req setResponseEncoding:NSUTF8StringEncoding];
+    [self addRequest:req];
+    return req;
+}
+
+- (DOUHttpRequest*)putDic:(DOUQuery *)query postBody:(NSMutableDictionary *)body callback:(DOUReqBlock)block
+{
+    query.apiBaseUrlString = self.apiBaseUrlString;
+    __block DOUHttpRequest * req = [DOUHttpRequest requestWithQuery:query completionBlock:^{
+        if (block != NULL) {
+            block(req);      
+        }
+    }];
+    
+    [req setRequestMethod:@"PUT"];
+    [req addRequestHeader:@"Content-Type" value:@"application/x-www-form-urlencoded; charset=UTF-8"];      
+    
+    if (body) {
+        
+        for (NSString *key in [body allKeys] ) {
+            [req addPostValue:[body objectForKey:key] forKey:key];
+        }
+    }
+    else {
+        [req addRequestHeader:@"Content-Length" value:@"0"];
+    }
+    
+    [req setResponseEncoding:NSUTF8StringEncoding];
+    [self addRequest:req];
+    return req;
+}
+
 - (DOUHttpRequest *)post2:(DOUQuery *)query 
                 photoData:(NSData *)photoData
               description:(NSString *)description

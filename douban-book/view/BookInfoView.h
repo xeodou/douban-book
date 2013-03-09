@@ -10,4 +10,7 @@
 
 @interface BookInfoView : UIView
 
+@property (nonatomic, weak) IBOutlet UILabel *title;
+@property (nonatomic, weak) IBOutlet UILabel *content;
+- (void)setContentText:(NSString *)str;
 @end

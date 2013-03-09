@@ -7,7 +7,12 @@
 //
 
 #import "CustomViewController.h"
+#import "BuyItemCell.h"
+#import <SDWebImage/UIImageView+WebCache.h>
+#import "ASIHTTPRequest.h"
 
-@interface BuyBookViewController : CustomViewController
+@interface BuyBookViewController : CustomViewController<UITableViewDelegate, UITableViewDataSource, BuyItemCellBtnClickDeleagte, ASIHTTPRequestDelegate>
+@property (weak, nonatomic) IBOutlet UITableView *mtableView;
 
+@property (nonatomic, strong) NSString *bookId;
 @end

@@ -8,6 +8,23 @@
 
 #import <UIKit/UIKit.h>
 
-@interface HistoryCellCell : UITableViewCell
+@protocol HistoryDeleteDelegate <NSObject>
+
+- (void)click:(NSString*)name;
+- (void) toSearch:(NSString*)name;
+@end
+
+@interface HistoryCellCell : UITableViewCell{
+    id<HistoryDeleteDelegate> delegate;
+}
+
+@property (nonatomic, strong) id<HistoryDeleteDelegate> delegate;
+@property (nonatomic, weak) IBOutlet UILabel *name;
+
+@property (nonatomic, weak) IBOutlet UIButton *delBtn;
+
+- (IBAction) deleteClick:(id)sender;
+
+- (IBAction) contentClick:(id)sender;
 
 @end

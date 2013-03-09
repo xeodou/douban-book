@@ -7,7 +7,25 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ZBarSDK.h"
 
-@interface ScanerViewController : UIViewController
+@protocol ScanerViewDelegate <NSObject>
 
+- (void)scanSuccess:(NSString*)result;
+
+@end
+
+@interface ScanerViewController : UIViewController<ZBarReaderViewDelegate, UITextFieldDelegate>{
+    id<ScanerViewDelegate> delegate;
+}
+@property (strong, nonatomic) IBOutlet UIView *CoverView;
+@property (strong, nonatomic) IBOutlet UIView *editView;
+@property (weak, nonatomic) IBOutlet UITextField *isbnEdit;
+@property (strong, nonatomic) UIViewController *parent;
+@property (strong, nonatomic) id<ScanerViewDelegate> delegate;
+- (IBAction)closeBtnClick:(id)sender;
+
+- (IBAction)editChangeclick:(id)sender;
+- (IBAction)scanChangeClick:(id)sender;
+- (IBAction)searchClick:(id)sender;
 @end

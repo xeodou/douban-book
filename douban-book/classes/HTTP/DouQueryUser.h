@@ -10,4 +10,8 @@
 
 @interface DouQueryUser : DOUQuery
 
+
++ (DOUQuery*)querForSelf;
++ (DOUQuery*)querForUser:(NSString*)identifer;
+
 @end

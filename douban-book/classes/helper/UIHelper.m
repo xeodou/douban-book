@@ -10,4 +10,11 @@
 
 @implementation UIHelper
 
+
++ (void) showAlert:(NSString*)title msg:(NSString*)msg
+{
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:title message:msg delegate:nil cancelButtonTitle:NSLocalizedString(@"alert_btn_ok", @"nil")otherButtonTitles:nil, nil];
+    [alert show];
+}
+
 @end

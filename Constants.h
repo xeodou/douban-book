@@ -8,8 +8,9 @@
 
 #ifndef douban_book_Constants_h
 #define douban_book_Constants_h
-#define appkey @""
-#define appsecret @""
+#define appkey @"095147df1e01aa0d1bf3d79d5a04fe27"
+#define appsecret @"26c0493e8596e3bd"
+#define redirectUrl @"http://www.douban.com/location/mobile"
 
 
 #endif

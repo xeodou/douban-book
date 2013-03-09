@@ -14,6 +14,8 @@
 @property (nonatomic, retain) NSMutableDictionary *dictionary;
 
 
+@property (nonatomic, assign) int code;
+
 - (id)initWithString:(NSString *)theJsonStr;
 - (id)initWithDictionary:(NSDictionary *)theDictionary;
 

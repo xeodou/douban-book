@@ -9,6 +9,7 @@
 #import "NavCenterView.h"
 
 @implementation NavCenterView
+@synthesize lable;
 
 - (id)initWithFrame:(CGRect)frame
 {
@@ -27,5 +28,17 @@
     // Drawing code
 }
 */
+
+- (void)setTitle:(NSString *)title
+{
+    if(lable != nil){
+        [lable setText:title];
+    }
+}
+
+- (void)dealloc
+{
+    [self setLable:nil];
+}
 
 @end

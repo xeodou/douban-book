@@ -7,7 +7,16 @@
 //
 
 #import "DOUBookCollectionArray.h"
+#import "DOUBookCollection.h"
 
 @implementation DOUBookCollectionArray
+
++ (Class)objectClass {
+    return [DOUBookCollection class];
+}
+
++ (NSString *)objectName {
+    return @"collections";
+}
 
 @end

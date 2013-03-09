@@ -8,6 +8,9 @@
 
 #import "CustomViewController.h"
 
-@interface BookCommentDetailViewController : CustomViewController
+@interface BookCommentDetailViewController : CustomViewController<UIWebViewDelegate>
+
+@property (nonatomic, strong)NSString *reviewId;
+@property (weak, nonatomic) IBOutlet UIWebView *mWebView;
 
 @end

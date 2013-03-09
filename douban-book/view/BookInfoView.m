@@ -9,6 +9,8 @@
 #import "BookInfoView.h"
 
 @implementation BookInfoView
+@synthesize title;
+@synthesize content;
 
 - (id)initWithFrame:(CGRect)frame
 {
@@ -27,5 +29,17 @@
     // Drawing code
 }
 */
+
+- (void)setContentText:(NSString *)str
+{
+    [content setText:str];
+    CGRect frame = content.frame;
+    CGSize labelsize = [str sizeWithFont:content.font];
+    frame.size.height = labelsize.height * (labelsize.width / 270 + 2);
+    content.frame = frame;
+    CGFloat h = frame.origin.y + frame.size.height + 4;
+    frame = self.frame;
+    [self setFrame:CGRectMake(0, 0, 300, h)];
+}
 
 @end

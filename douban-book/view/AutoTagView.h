@@ -10,4 +10,8 @@
 
 @interface AutoTagView : UIView
 
+@property (weak, nonatomic) IBOutlet UILabel *title;
+@property (weak, nonatomic) IBOutlet UIView *tagsView;
+- (id) initWith:(NSArray*)array;
+- (void) setTags:(NSArray *)array;
 @end

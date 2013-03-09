@@ -9,6 +9,12 @@
 #import "BuyItemCell.h"
 
 @implementation BuyItemCell
+@synthesize image;
+@synthesize oldPrice;
+@synthesize newprice;
+@synthesize url;
+@synthesize delegate;
+@synthesize merchant;
 
 - (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
 {
@@ -24,6 +30,24 @@
     [super setSelected:selected animated:animated];
 
     // Configure the view for the selected state
+}
+
+- (IBAction)buyBtnClick:(id)sender
+{
+    NSLog(@"%@", url);
+    if (url != nil) {
+        [[self delegate] buyItemCellBtnClick:url];
+    }
+}
+
+- (void)dealloc
+{
+    [self setMerchant:nil];
+    [self setDelegate:nil];
+    [self setImage:nil];
+    [self setNewprice:nil];
+    [self setOldPrice:nil];
+    [self setUrl:nil];
 }
 
 @end

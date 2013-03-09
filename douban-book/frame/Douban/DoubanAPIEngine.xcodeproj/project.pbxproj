@@ -432,6 +432,14 @@
 		D89A6AA6162D384100954BC4 /* DOULoc.m in Sources */ = {isa = PBXBuildFile; fileRef = D89A6A9E162D384100954BC4 /* DOULoc.m */; };
 		D89A6AA7162D384100954BC4 /* DOULocArray.h in Headers */ = {isa = PBXBuildFile; fileRef = D89A6A9F162D384100954BC4 /* DOULocArray.h */; };
 		D89A6AA8162D384100954BC4 /* DOULocArray.m in Sources */ = {isa = PBXBuildFile; fileRef = D89A6AA0162D384100954BC4 /* DOULocArray.m */; };
+		E63D069416BFFD9700AA04F5 /* DOUBookAnnotationArray.h in Headers */ = {isa = PBXBuildFile; fileRef = E63D069216BFFD9700AA04F5 /* DOUBookAnnotationArray.h */; };
+		E63D069516BFFD9700AA04F5 /* DOUBookAnnotationArray.m in Sources */ = {isa = PBXBuildFile; fileRef = E63D069316BFFD9700AA04F5 /* DOUBookAnnotationArray.m */; };
+		E63D069916BFFDB100AA04F5 /* DouBookAnnotation.h in Headers */ = {isa = PBXBuildFile; fileRef = E63D069716BFFDB100AA04F5 /* DouBookAnnotation.h */; };
+		E63D069A16BFFDB100AA04F5 /* DouBookAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = E63D069816BFFDB100AA04F5 /* DouBookAnnotation.m */; };
+		E685654A16BFAE4A00990E43 /* DOUBookCollectionArray.h in Headers */ = {isa = PBXBuildFile; fileRef = E685654816BFAE4A00990E43 /* DOUBookCollectionArray.h */; };
+		E685654B16BFAE4A00990E43 /* DOUBookCollectionArray.m in Sources */ = {isa = PBXBuildFile; fileRef = E685654916BFAE4A00990E43 /* DOUBookCollectionArray.m */; };
+		E685654F16BFAE6400990E43 /* DOUBookCollection.h in Headers */ = {isa = PBXBuildFile; fileRef = E685654D16BFAE6400990E43 /* DOUBookCollection.h */; };
+		E685655016BFAE6400990E43 /* DOUBookCollection.m in Sources */ = {isa = PBXBuildFile; fileRef = E685654E16BFAE6400990E43 /* DOUBookCollection.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -867,6 +875,14 @@
 		D89A6A9E162D384100954BC4 /* DOULoc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DOULoc.m; sourceTree = "<group>"; };
 		D89A6A9F162D384100954BC4 /* DOULocArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DOULocArray.h; sourceTree = "<group>"; };
 		D89A6AA0162D384100954BC4 /* DOULocArray.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DOULocArray.m; sourceTree = "<group>"; };
+		E63D069216BFFD9700AA04F5 /* DOUBookAnnotationArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DOUBookAnnotationArray.h; sourceTree = "<group>"; };
+		E63D069316BFFD9700AA04F5 /* DOUBookAnnotationArray.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DOUBookAnnotationArray.m; sourceTree = "<group>"; };
+		E63D069716BFFDB100AA04F5 /* DouBookAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DouBookAnnotation.h; sourceTree = "<group>"; };
+		E63D069816BFFDB100AA04F5 /* DouBookAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DouBookAnnotation.m; sourceTree = "<group>"; };
+		E685654816BFAE4A00990E43 /* DOUBookCollectionArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DOUBookCollectionArray.h; sourceTree = "<group>"; };
+		E685654916BFAE4A00990E43 /* DOUBookCollectionArray.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DOUBookCollectionArray.m; sourceTree = "<group>"; };
+		E685654D16BFAE6400990E43 /* DOUBookCollection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DOUBookCollection.h; sourceTree = "<group>"; };
+		E685654E16BFAE6400990E43 /* DOUBookCollection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DOUBookCollection.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1468,6 +1484,14 @@
 				1A3451D8167887E90097FEF5 /* DOUBook.m */,
 				1A3451D7167887E90097FEF5 /* DOUBookArray.h */,
 				1A3451D6167887E90097FEF5 /* DOUBookArray.m */,
+				E685654816BFAE4A00990E43 /* DOUBookCollectionArray.h */,
+				E685654916BFAE4A00990E43 /* DOUBookCollectionArray.m */,
+				E685654D16BFAE6400990E43 /* DOUBookCollection.h */,
+				E685654E16BFAE6400990E43 /* DOUBookCollection.m */,
+				E63D069216BFFD9700AA04F5 /* DOUBookAnnotationArray.h */,
+				E63D069316BFFD9700AA04F5 /* DOUBookAnnotationArray.m */,
+				E63D069716BFFDB100AA04F5 /* DouBookAnnotation.h */,
+				E63D069816BFFDB100AA04F5 /* DouBookAnnotation.m */,
 			);
 			path = Book;
 			sourceTree = "<group>";
@@ -1675,6 +1699,10 @@
 				1A3451E5167887F80097FEF5 /* DOUMusic.h in Headers */,
 				D8695E8F167AD59000EFFF41 /* DOUNotification.h in Headers */,
 				D8695E91167AD59000EFFF41 /* DOUNotificationArray.h in Headers */,
+				E685654A16BFAE4A00990E43 /* DOUBookCollectionArray.h in Headers */,
+				E685654F16BFAE6400990E43 /* DOUBookCollection.h in Headers */,
+				E63D069416BFFD9700AA04F5 /* DOUBookAnnotationArray.h in Headers */,
+				E63D069916BFFDB100AA04F5 /* DouBookAnnotation.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1899,6 +1927,10 @@
 				1A3451E4167887F80097FEF5 /* DOUMusic.m in Sources */,
 				D8695E90167AD59000EFFF41 /* DOUNotification.m in Sources */,
 				D8695E92167AD59000EFFF41 /* DOUNotificationArray.m in Sources */,
+				E685654B16BFAE4A00990E43 /* DOUBookCollectionArray.m in Sources */,
+				E685655016BFAE6400990E43 /* DOUBookCollection.m in Sources */,
+				E63D069516BFFD9700AA04F5 /* DOUBookAnnotationArray.m in Sources */,
+				E63D069A16BFFDB100AA04F5 /* DouBookAnnotation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

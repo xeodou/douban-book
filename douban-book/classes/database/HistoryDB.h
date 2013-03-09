@@ -10,4 +10,10 @@
 
 @interface HistoryDB : NSObject
 
+- (BOOL) insertHistory:(NSString*)str;
+- (NSString*) searchKey:(NSString*)str;
+- (BOOL)delete:(NSString*)str;
+- (void)close;
+- (NSArray*) getAllHistory;
+- (BOOL)deleteString:(NSString*)str;
 @end

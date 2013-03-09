@@ -39,6 +39,7 @@ static NSTimeInterval const kModalViewAnimationDuration = 0.3;
 @synthesize popupView;
 @synthesize rootViewController;
 @synthesize coverView;
+@synthesize initialPopupTransform;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {

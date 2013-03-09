@@ -45,6 +45,10 @@
                 callback:(DOUReqBlock)block
   uploadProgressDelegate:(id<ASIProgressDelegate>)progressDelegate;
 
+- (DOUHttpRequest *)postDic:(DOUQuery *)query postBody:(NSMutableDictionary *)body callback:(DOUReqBlock)block;
+
+- (DOUHttpRequest *)putDic:(DOUQuery *)query postBody:(NSMutableDictionary *)body callback:(DOUReqBlock)block;
+
 // v2 api post image
 - (DOUHttpRequest *)post2:(DOUQuery *)query
                 photoData:(NSData *)photoData

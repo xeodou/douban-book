@@ -7,7 +7,16 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <SDWebImage/UIImageView+WebCache.h>
+#import "LoginViewController.h"
 
-@interface ThridViewController : UIViewController
 
+@interface ThridViewController : UIViewController<UITableViewDelegate, UITableViewDataSource, LoginCallDelegate, UIAlertViewDelegate>
+
+@property (weak, nonatomic) IBOutlet UITableView *mTableview;
+@property (strong, nonatomic) IBOutlet UIView *tableHeaderView;
+@property (weak, nonatomic) IBOutlet UIImageView *avatar;
+@property (weak, nonatomic) IBOutlet UILabel *name;
+@property (weak, nonatomic) IBOutlet UILabel *intro;
+- (IBAction)goToMyDouban:(id)sender;
 @end

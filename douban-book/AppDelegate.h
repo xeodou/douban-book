@@ -7,8 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Reachability.h"
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
+@interface AppDelegate : UIResponder <UIApplicationDelegate, UIAlertViewDelegate>{
+    Reachability *hostReach;
+}
 
 @property (strong, nonatomic) UIWindow *window;
 

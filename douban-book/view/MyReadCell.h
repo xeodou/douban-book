@@ -10,4 +10,6 @@
 
 @interface MyReadCell : UITableViewCell
 
+@property (strong, nonatomic) IBOutlet UILabel *label;
+
 @end

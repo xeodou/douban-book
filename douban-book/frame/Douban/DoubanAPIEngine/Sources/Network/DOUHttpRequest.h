@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "ASIHTTPRequest.h"
+#import "ASIFormDataRequest.h"
 
 
 extern NSUInteger const kDefaultTimeoutSeconds;
@@ -55,7 +56,7 @@ typedef void (^DOUSizeBlock)(long long size);
 //
 // DOUHttpRequest is the wrapper of http request, now it's ASIHTTPRequest.
 //
-@interface DOUHttpRequest : ASIHTTPRequest
+@interface DOUHttpRequest : ASIFormDataRequest
 
 + (DOUHttpRequest *)requestWithURL:(NSURL *)URL;
 

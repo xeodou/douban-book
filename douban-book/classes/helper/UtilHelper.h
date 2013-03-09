@@ -10,4 +10,6 @@
 
 @interface UtilHelper : NSObject
 
++ (NSString*)regMatcher:(NSString*)string regex:(NSString*)reg rangeIndex:(NSInteger)index;
++ (BOOL)isLogin;
 @end

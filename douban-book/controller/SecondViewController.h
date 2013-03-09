@@ -7,7 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "BookTagCell.h"
+#import "ASIHTTPRequest.h"
+#import "EGORefreshTableHeaderView.h"
 
-@interface SecondViewController : UIViewController
 
+@interface SecondViewController : UIViewController<UITableViewDelegate, UITableViewDataSource, TagClickDelegte, ASIHTTPRequestDelegate,UIAlertViewDelegate, EGORefreshTableHeaderDelegate>
+
+@property (weak, nonatomic) IBOutlet UITableView *mTableView;
 @end

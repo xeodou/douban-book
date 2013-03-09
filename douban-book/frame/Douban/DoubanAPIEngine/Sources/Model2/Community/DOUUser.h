@@ -16,6 +16,7 @@
 @property (nonatomic, copy) NSString *alt;
 @property (nonatomic, copy) NSString *uid;
 @property (nonatomic, copy) NSString *desc;
+@property (nonatomic, copy) NSString *created;
 
 @property (nonatomic, copy) NSString *locId;
 @property (nonatomic, copy) NSString *locName;

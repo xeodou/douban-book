@@ -8,10 +8,13 @@
 
 #import <UIKit/UIKit.h>
 #import <SDWebImage/UIImageView+WebCache.h>
-#import "DropDownView.h"
+#import "CustomGridCell.h"
+#import "ScanerViewController.h"
+#import "ASIHTTPRequest.h"
+#import "EGORefreshTableHeaderView.h"
 
-@interface FirstViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
+@interface FirstViewController : UIViewController <UITableViewDataSource, UITableViewDelegate, GridCellItemClickDelegate, ScanerViewDelegate, ASIHTTPRequestDelegate, UIAlertViewDelegate,EGORefreshTableHeaderDelegate>
+@property (weak, nonatomic) IBOutlet UISegmentedControl *mSegement;
 @property (weak, nonatomic) IBOutlet UITableView *mTableView;
-@property (weak, nonatomic) IBOutlet DropDownView *mDropDownView;
-
+- (IBAction)segementClick:(id)sender;
 @end

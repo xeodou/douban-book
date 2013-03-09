@@ -8,6 +8,19 @@
 
 #import <UIKit/UIKit.h>
 
-@interface DropedView : UIView
+@protocol DropedItemDelegate <NSObject>
+
+- (void) dropviewitemClick:(NSInteger)position;
+
+@end
+
+@interface DropedView : UIView <UITableViewDelegate, UITableViewDataSource>
+{
+    id<DropedItemDelegate> delegate;
+}
+@property (nonatomic, strong) id<DropedItemDelegate> delegate;
+@property (nonatomic, weak) IBOutlet UITableView *mtable;
+
+- (void) setDataArray:(NSArray*)array;
 
 @end

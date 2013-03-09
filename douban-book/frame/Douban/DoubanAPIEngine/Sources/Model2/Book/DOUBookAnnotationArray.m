@@ -7,7 +7,16 @@
 //
 
 #import "DOUBookAnnotationArray.h"
+#import "DouBookAnnotation.h"
 
 @implementation DOUBookAnnotationArray
+
++ (Class)objectClass {
+    return [DouBookAnnotation class];
+}
+
++ (NSString *)objectName {
+    return @"annotations";
+}
 
 @end

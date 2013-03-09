@@ -29,6 +29,16 @@
 
 @dynamic authorIntro;
 @dynamic summary;
+@dynamic binding;
+@dynamic author;
+@dynamic originTitle;
+@dynamic translator;
+@dynamic subtitle;
+@dynamic pages;
+@dynamic average;
+@dynamic translatorStr;
+@dynamic authorStr;
+@dynamic price;
 
 
 - (NSString *)identifier {
@@ -45,6 +55,46 @@
 
 - (NSString *)rating {
   return [self.dictionary objectForKey:@"rating"];
+}
+
+- (NSString *)binding {
+    return [self.dictionary objectForKey:@"binding"];
+}
+
+- (NSString *)authorStr {
+    return [self.dictionary objectForKey:@"author"];
+}
+
+- (NSArray *)author {
+    return [NSArray arrayWithArray:[self.dictionary objectForKey:@"author"]];
+}
+
+- (NSString *)originTitle {
+    return [self.dictionary objectForKey:@"origin_title"];
+}
+
+- (NSString *)translatorStr {
+    return [self.dictionary objectForKey:@"translator"];
+}
+
+- (NSArray *)translator {
+    return [NSArray arrayWithArray:[self.dictionary objectForKey:@"translator"]];
+}
+
+- (NSString *)pages {
+    return [self.dictionary objectForKey:@"pages"];
+}
+
+- (NSString *)subtitle {
+    return [self.dictionary objectForKey:@"subtitle"];
+}
+
+- (NSString *) publisher {
+    return [self.dictionary objectForKey:@"publisher"];
+}
+
+- (NSString *) price {
+    return [self.dictionary objectForKey:@"price"];
 }
 
 - (NSString *)numRaters {

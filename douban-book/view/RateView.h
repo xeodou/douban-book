@@ -9,5 +9,12 @@
 #import <UIKit/UIKit.h>
 
 @interface RateView : UIView
+@property (weak, nonatomic) IBOutlet UIButton *oneStar;
+@property (weak, nonatomic) IBOutlet UIButton *twoStar;
+@property (weak, nonatomic) IBOutlet UIButton *threeStar;
+@property (weak, nonatomic) IBOutlet UIButton *fourStar;
+@property (weak, nonatomic) IBOutlet UIButton *fiveStar;
 
+- (IBAction)click:(id)sender;
+- (int)rate;
 @end

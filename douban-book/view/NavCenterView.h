@@ -10,4 +10,7 @@
 
 @interface NavCenterView : UIView
 
+@property (nonatomic, weak) IBOutlet UILabel *lable;
+
+- (void) setTitle:(NSString*)title;
 @end

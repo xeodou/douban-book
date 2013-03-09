@@ -9,5 +9,5 @@
 #import <Foundation/Foundation.h>
 
 @interface UIHelper : NSObject
-
++ (void) showAlert:(NSString*)title msg:(NSString*)msg;
 @end

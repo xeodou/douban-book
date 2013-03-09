@@ -7,7 +7,9 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "DOUService.h"
 
 @interface GenDouService : NSObject
 
+- (DOUService*) genDouService;
 @end

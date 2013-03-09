@@ -366,8 +366,8 @@ kDetailViewWidth, kHistoryTableRowHeight*kMaxHistoryTableRowCount + kStatusBarHe
 		//[self addGestureRecognizer:downGestureRecognizer];
         
 		// Images used as background when status bar style is Default
-		defaultStatusBarImage_ = [UIImage imageWithData:MTStatusBarBackgroundImageData(NO)];
-		defaultStatusBarImageShrinked_ = [UIImage imageWithData:MTStatusBarBackgroundImageData(YES)];
+		defaultStatusBarImage_ = [[UIImage imageWithData:MTStatusBarBackgroundImageData(NO)] retain];
+		defaultStatusBarImageShrinked_ = [[UIImage imageWithData:MTStatusBarBackgroundImageData(YES)] retain];
         
 		// Background-Image of the Content View
 		statusBarBackgroundImageView_ = [[UIImageView alloc] initWithFrame:backgroundView_.frame];

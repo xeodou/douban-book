@@ -5,3 +5,47 @@
   Created by xeodou on 13-1-29.
   Copyright (c) 2013年 __MyCompanyName__. All rights reserved.
 */
+
+"hud_info_load" = "加载中...";
+"hud_info_complete" = "加载完成";
+"hud_info_fail" = "加载失败";
+"hud_info_addAnnotation" = "正在上传书评...";
+"hud_info_annotation_sucess" = "上传书评成功";
+"hud_info_camera" = "正在加载相机...";
+"hud_info_book" = "未找到该本图书信息！";
+"hud_info_user_info" = "正在获取用户信息...";
+"hud_info_user_info_err" = "获取用户信息失败，请返回重试!";
+"hud_info_auth" = "授权成功,正在跳转...";
+"hud_info_logout" = "正在登出...";
+"hud_info_search" = "查找图书错误!";
+"hud_info_annomation" = "获取图书笔记错误！";
+"hud_info_result" = "您的网络不给力啊，请重试！";
+"hud_info_annotation" = "添加书评失败，请重试！";
+"hud_info_author" = "正在获取认真信息...";
+"alert_btn_ok" = "确定";
+"alert_btn_retry" = "重试";
+"alert_btn_cancel" = "取消";
+"alert_btn_setting" = "打开设置";
+"alert_title_info" = "提示信息";
+"alert_msg_network_unable" = "您的手机网络已经断开\n请检查网络连接。";
+"alert_msg_isbn_length_error" = "ISBN号长度长度应为10位或13位。";
+"alert_msg_tag_eror" = "加载标签错误，请重试！";
+"alert_msg_new_book_error" = "加载新书错误，请重试！";
+"alert_msg_buy" = "加载图书购买信息错误，请重试";
+"alert_msg_unlogin" = "您还未登陆，请登录后查看！";
+"alert_msg_auth" = "授权失败，请返回重试";
+"alert_msg_logout" = "你确定要注销登录么？";
+"alert_msg_no_annotation" = "未找到图书笔记";
+"alert_msg_top250" = "获取图书失败，请重试！";
+"alert_msg_top250_all" = "已经加载所有TOP250图书！";
+"alert_msg_book_all" = "已经加载所有图书！";
+"alert_msg_book_anno" = "已经加载所有图书评论";
+"alert_msg_book_annotation" = "已经加载所有图书笔记";
+"alert_msg_book_error" = "查找图书错误，请重试！";
+"alert_msg_not_tial" = "很抱歉，由于应用未通过豆瓣审核\n您的账户无法得到授权\n如需要使用登录，请联系@xeodou\n将你的账户加入白名单。";
+"alert_msg_mark_null" = "笔记章节名和页面必须选填一项！";
+"alert_msg_mark_content_null" = "笔记内容不能为空！";
+"alert_msg_error_anno" = "加载图书评论失败!";
+"alert_msg_no_comment" = "暂无评论!";
+"release_to_refresh" = "释放去刷新...";
+"pulldown_to_refresh" = "下拉刷新";

@@ -14,7 +14,13 @@
 
 @dynamic string;
 @synthesize dictionary = dictionary_;
+@dynamic code;
 
+
+- (int)code
+{
+    return [[self.dictionary objectForKey:@"code"] intValue];
+}
 
 - (id)init {
   self = [super init];

@@ -10,4 +10,7 @@
 
 @interface DBHelper : NSObject
 
++ (NSString*) getDBPath;
++ (void) createTable;
+
 @end
