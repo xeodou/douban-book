@@ -188,22 +188,24 @@
     MTStatusBarOverlay *MTSB = [MTStatusBarOverlay sharedInstance];
     MTSB.animation = MTStatusBarOverlayAnimationFallDown;
     MTSB.detailViewMode = MTDetailViewModeHistory;     
-    [MTSB postMessage:@"正在获取收藏信息"];
+//    [MTSB postMessage:@"正在获取收藏信息"];
+    [readerStatusSege setEnabled:NO];
     DOUService *service = [[[GenDouService alloc] init] genDouService];
     service.apiBaseUrlString = kHttpsApiBaseUrl;
     DOUQuery *query = [DouQueryBook queryForCollectionById:mdouBook.identifier];
     DOUReqBlock block = ^(DOUHttpRequest *req){
         NSError *error = [req doubanError];
+        [readerStatusSege setEnabled:YES];
         if (error) {
             isSelect = -1;
-            [MTSB postImmediateMessage:@"获取收藏信息失败！" duration:2.0 animated:YES];
+//            [MTSB postImmediateMessage:@"获取收藏信息失败！" duration:2.0 animated:YES];
             return;
         }
 //        NSLog(@"%@", [req responseString]);
         DOUBookCollection *c = [[DOUBookCollection alloc] initWithString:[req responseString]];
         if ([c code] == 1001) {
             isSelect = -1;
-            [MTSB postImmediateMessage:@"您还未收藏该图书" duration:2.0 animated:YES];
+//            [MTSB postImmediateMessage:@"您还未收藏该图书" duration:2.0 animated:YES];
             return;
         }
         if (c.comment != nil && ![c.comment isEqual:@""]) {
@@ -213,7 +215,7 @@
             isSelect = [self getInt:c.status];
             [readerStatusSege setSelectedSegmentIndex:isSelect];
         }
-        [MTSB postImmediateMessage:@"获取信息成功" duration:2.0 animated:YES];
+//        [MTSB postImmediateMessage:@"获取信息成功" duration:2.0 animated:YES];
     };
     [service get:query callback:block];
 }

@@ -565,11 +565,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "douban-book/controller/BookDetailViewController.m"
-         timestampString = "381905775.536842"
+         timestampString = "385068850.634818"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "235"
-         endingLineNumber = "235"
+         startingLineNumber = "237"
+         endingLineNumber = "237"
          landmarkName = "-collect:"
          landmarkType = "5">
       </FileBreakpoint>
@@ -578,11 +578,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "douban-book/controller/BookDetailViewController.m"
-         timestampString = "381917323.897299"
+         timestampString = "385068850.634818"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "475"
-         endingLineNumber = "475"
+         startingLineNumber = "477"
+         endingLineNumber = "477"
          landmarkName = "-completeBtnClick:"
          landmarkType = "5">
       </FileBreakpoint>
