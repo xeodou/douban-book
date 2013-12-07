@@ -26,10 +26,11 @@
 
 
 #import "LoadMoreTableFooterView.h"
+#import "Constants.h"
 
-
-#define TEXT_COLOR	 [UIColor colorWithRed:87.0/255.0 green:108.0/255.0 blue:137.0/255.0 alpha:1.0]
+#define TEXT_COLOR         [UIColor colorWithRed:87.0/255.0 green:108.0/255.0 blue:137.0/255.0 alpha:1.0]
 #define FLIP_ANIMATION_DURATION 0.18f
+
 
 
 @interface LoadMoreTableFooterView (Private)
@@ -54,7 +55,7 @@
 		label.shadowColor = [UIColor colorWithWhite:0.9f alpha:1.0f];
 		label.shadowOffset = CGSizeMake(0.0f, 1.0f);
 		label.backgroundColor = [UIColor clearColor];
-		label.textAlignment = UITextAlignmentCenter;
+		label.textAlignment = NSTextAlignmentCenter;
 		[self addSubview:label];
 		_statusLabel=label;
 		[label release];
@@ -101,52 +102,58 @@
 #pragma mark -
 #pragma mark ScrollView Methods
 
+
 - (void)loadMoreScrollViewDidScroll:(UIScrollView *)scrollView {
-	if (_state == LoadMoreLoading) {
-		scrollView.contentInset = UIEdgeInsetsMake(0.0f, 0.0f, 40.0f, 0.0f);
-	} else if (scrollView.isDragging) {
-		
-		BOOL _loading = NO;
-		if ([_delegate respondsToSelector:@selector(loadMoreTableFooterDataSourceIsLoading:)]) {
-			_loading = [_delegate loadMoreTableFooterDataSourceIsLoading:self];
-		}
-		
-		if (_state == LoadMoreNormal && scrollView.contentOffset.y < (scrollView.contentSize.height - 280) && scrollView.contentOffset.y > (scrollView.contentSize.height - 320) && !_loading) {
-			self.frame = CGRectMake(0, scrollView.contentSize.height, self.frame.size.width, self.frame.size.height);
-			self.hidden = NO;
-		} else if (_state == LoadMoreNormal && scrollView.contentOffset.y > (scrollView.contentSize.height - 280) && !_loading) {
-			[self setState:LoadMorePulling];
-		} else if (_state == LoadMorePulling && scrollView.contentOffset.y < (scrollView.contentSize.height - 280) && scrollView.contentOffset.y > (scrollView.contentSize.height - 320) && !_loading) {
-			[self setState:LoadMoreNormal];
-		}
-		
-		if (scrollView.contentInset.bottom != 0) {
-			scrollView.contentInset = UIEdgeInsetsZero;
-		}
-	}
+    if (_state == LoadMoreLoading) {
+        scrollView.contentInset = UIEdgeInsetsMake(0.0f, 0.0f, 60.0f, 0.0f);
+    } else if (scrollView.isDragging) {
+        
+        BOOL _loading = NO;
+        if ([_delegate respondsToSelector:@selector(loadMoreTableFooterDataSourceIsLoading:)]) {
+            _loading = [_delegate loadMoreTableFooterDataSourceIsLoading:self];
+        }
+        
+        CGFloat offsetY = scrollView.contentOffset.y;
+        CGFloat contentHeight = scrollView.contentSize.height;
+        CGFloat frameHeight = self.frame.size.height;
+        
+        if (_state == LoadMoreNormal && offsetY < (contentHeight - frameHeight + REFRESH_REGION_HEIGHT) && offsetY > (contentHeight - frameHeight) && !_loading) {
+            self.frame = CGRectMake(0, scrollView.contentSize.height, self.frame.size.width, self.frame.size.height);
+            self.hidden = NO;
+        } else if (_state == LoadMoreNormal && offsetY > (contentHeight - frameHeight + REFRESH_REGION_HEIGHT) && !_loading) {
+            [self setState:LoadMorePulling];
+        } else if (_state == LoadMorePulling && offsetY < (contentHeight - frameHeight + REFRESH_REGION_HEIGHT) && offsetY > (contentHeight - self.frame.size.height) && !_loading) {
+            [self setState:LoadMoreNormal];
+        }
+        
+        if (scrollView.contentInset.bottom != 0) {
+            scrollView.contentInset = UIEdgeInsetsZero;
+        }
+    }
 }
 
 - (void)loadMoreScrollViewDidEndDragging:(UIScrollView *)scrollView {
-	
-	BOOL _loading = NO;
-	if ([_delegate respondsToSelector:@selector(loadMoreTableFooterDataSourceIsLoading:)]) {
-		_loading = [_delegate loadMoreTableFooterDataSourceIsLoading:self];
-	}
-	
-	if (scrollView.contentOffset.y > (scrollView.contentSize.height - 280) && !_loading) {		
-		if ([_delegate respondsToSelector:@selector(loadMoreTableFooterDidTriggerRefresh:)]) {
-			[_delegate loadMoreTableFooterDidTriggerRefresh:self];
-		}
-		
-		[self setState:LoadMoreLoading];
-		[UIView beginAnimations:nil context:NULL];
-		[UIView setAnimationDuration:0.2];
-		scrollView.contentInset = UIEdgeInsetsMake(0.0f, 0.0f, 40.0f, 0.0f);
-		[UIView commitAnimations];
-	}
+    
+    BOOL _loading = NO;
+    if ([_delegate respondsToSelector:@selector(loadMoreTableFooterDataSourceIsLoading:)]) {
+        _loading = [_delegate loadMoreTableFooterDataSourceIsLoading:self];
+    }
+    
+    //if (scrollView.contentOffset.y > (scrollView.contentSize.height - 300) && !_loading) {
+    if (scrollView.contentOffset.y > (scrollView.contentSize.height - self.frame.size.height + REFRESH_REGION_HEIGHT) && !_loading) {
+        if ([_delegate respondsToSelector:@selector(loadMoreTableFooterDidTriggerRefresh:)]) {
+            [_delegate loadMoreTableFooterDidTriggerRefresh:self];
+        }
+        
+        [self setState:LoadMoreLoading];
+        [UIView beginAnimations:nil context:NULL];
+        [UIView setAnimationDuration:0.2];
+        scrollView.contentInset = UIEdgeInsetsMake(0.0f, 0.0f, 60.0f, 0.0f);
+        [UIView commitAnimations];
+    }
 }
 
-- (void)loadMoreScrollViewDataSourceDidFinishedLoading:(UIScrollView *)scrollView {	
+- (void)loadMoreScrollViewDataSourceDidFinishedLoading:(UIScrollView *)scrollView {
 	[UIView beginAnimations:nil context:NULL];
 	[UIView setAnimationDuration:.3];
 	[scrollView setContentInset:UIEdgeInsetsMake(0.0f, 0.0f, 0.0f, 0.0f)];

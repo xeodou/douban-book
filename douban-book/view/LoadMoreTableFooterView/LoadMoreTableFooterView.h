@@ -27,6 +27,8 @@
 
 #import <UIKit/UIKit.h>
 
+#define REFRESH_REGION_HEIGHT 65.0f
+
 typedef enum{
 	LoadMorePulling = 0,
 	LoadMoreNormal,

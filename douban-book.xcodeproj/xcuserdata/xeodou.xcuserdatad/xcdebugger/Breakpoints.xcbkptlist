@@ -65,7 +65,7 @@
          endingColumnNumber = "9223372036854775807"
          startingLineNumber = "199"
          endingLineNumber = "199"
-         landmarkName = "-tableView:cellForRowAtIndexPath:"
+         landmarkName = "-initData"
          landmarkType = "5">
       </FileBreakpoint>
       <FileBreakpoint
@@ -91,20 +91,7 @@
          endingColumnNumber = "9223372036854775807"
          startingLineNumber = "202"
          endingLineNumber = "202"
-         landmarkName = "-tableView:cellForRowAtIndexPath:"
-         landmarkType = "5">
-      </FileBreakpoint>
-      <FileBreakpoint
-         shouldBeEnabled = "No"
-         ignoreCount = "0"
-         continueAfterRunningActions = "No"
-         filePath = "douban-book/AppDelegate.m"
-         timestampString = "381916403.967304"
-         startingColumnNumber = "9223372036854775807"
-         endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "35"
-         endingLineNumber = "35"
-         landmarkName = "-application:didFinishLaunchingWithOptions:"
+         landmarkName = "-numberOfSectionsInTableView:"
          landmarkType = "5">
       </FileBreakpoint>
       <FileBreakpoint
@@ -117,7 +104,7 @@
          endingColumnNumber = "9223372036854775807"
          startingLineNumber = "76"
          endingLineNumber = "76"
-         landmarkName = "-alertView:didDismissWithButtonIndex:"
+         landmarkName = "-applicationDidBecomeActive:"
          landmarkType = "5">
       </FileBreakpoint>
       <FileBreakpoint
@@ -453,7 +440,7 @@
          endingColumnNumber = "9223372036854775807"
          startingLineNumber = "95"
          endingLineNumber = "95"
-         landmarkName = "-webViewDidFinishLoad:"
+         landmarkName = "-prefersStatusBarHidden"
          landmarkType = "5">
       </FileBreakpoint>
       <FileBreakpoint

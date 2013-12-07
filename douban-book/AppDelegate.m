@@ -10,6 +10,7 @@
 #import "DBHelper.h"
 #import "MobClick.h"
 #import "PrettyDrawing.h"
+#import "Constants.h"
 
 @implementation AppDelegate
 
@@ -21,8 +22,26 @@
     [DBHelper createTable];
     [MobClick startWithAppkey:@"51135b1c52701524db00001e" reportPolicy:BATCH channelId:@"appstore"];
     [MobClick checkUpdate];
+    if (SYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO(@"7.0")) {
+        [[UINavigationBar appearance] setBarTintColor:[UIColor colorWithHex:0x5CAE68]];
+        NSShadow *shadow = [[NSShadow alloc] init];
+        shadow.shadowColor = [UIColor colorWithRed:0.0 green:0.0 blue:0.0 alpha:0.8];
+        shadow.shadowOffset = CGSizeMake(0, 1);
+        [[UINavigationBar appearance] setTitleTextAttributes: [NSDictionary dictionaryWithObjectsAndKeys:
+                                                               [UIColor colorWithRed:245.0/255.0 green:245.0/255.0 blue:245.0/255.0 alpha:1.0], NSForegroundColorAttributeName,
+                                                               shadow, NSShadowAttributeName,
+                                                               [UIFont fontWithName:@"HelveticaNeue-CondensedBlack" size:21.0], NSFontAttributeName, nil]];
+        
+        [application setStatusBarStyle:UIStatusBarStyleLightContent];
+//        self.window.clipsToBounds =YES;
+//        self.window.frame =  CGRectMake(0,20,self.window.frame.size.width,self.window.frame.size.height-20);
+//        
+//        self.window.bounds = CGRectMake(0, 20, self.window.frame.size.width, self.window.frame.size.height);
+    } else {
+        [[UINavigationBar appearance] setBackgroundImage:[UIImage imageNamed:@"nav_bg.png"] forBarMetrics:UIBarMetricsDefault];
+//        [[UINavigationBar appearance] setBackgroundColor:[UIColor colorWithHex:0x5CAE68]];
+    }
     [[UITabBar appearance] setSelectedImageTintColor:[UIColor whiteColor]];
-    [[UINavigationBar appearance] setBackgroundImage:[UIImage imageNamed:@"nav_bg.png"] forBarMetrics:UIBarMetricsDefault];
     [[UITabBar appearance] setBackgroundImage:[UIImage imageNamed:@"tab_bg.png"]];
     [[UITabBar appearance] setSelectionIndicatorImage:[UIImage imageNamed:@"tab_item_bg_s.png"]];
     [[UITabBar appearance] setTintColor:[UIColor whiteColor]];

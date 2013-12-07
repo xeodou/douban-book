@@ -11,6 +11,7 @@
 #import "MBProgressHUD.h"
 #import "UIHelper.h"
 #import "MobClick.h"
+#import "Constants.h"
 
 @interface ScanerViewController ()
 
@@ -25,6 +26,7 @@
 @synthesize parent;
 @synthesize delegate;
 @synthesize zbarView;
+@synthesize bottomView;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -50,7 +52,25 @@
     MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
     hud.labelText = NSLocalizedString(@"", nil);
     zbarView = [ZBarReaderView new];
-    zbarView.frame = CGRectMake(0, 0, 320, 460);
+    if (IOS7_OR_LATER) {
+        if (self.view.frame.size.height > 480) {
+            zbarView.frame = CGRectMake(0, 0, 320, 568);
+            CoverView.frame = CGRectMake(0, 0, 320, 568);
+            CGRect frame = bottomView.frame;
+            frame.origin.y = frame.origin.y + 88;
+            bottomView.frame = frame;
+        }
+    } else {
+        if (self.view.frame.size.height > 480) {
+            zbarView.frame = CGRectMake(0, 0, 320, 568);
+            CoverView.frame = CGRectMake(0, 0, 320, 568);
+            CGRect frame = bottomView.frame;
+            frame.origin.y = frame.origin.y + 72;
+            bottomView.frame = frame;
+        } else {
+            zbarView.frame = CGRectMake(0, 0, 320, 460);
+        }
+    }
     zbarView.readerDelegate = self;
     zbarView.allowsPinchZoom = NO;
 //    zbarView.scanCrop = CGRectMake(32, 133, 255, 124);

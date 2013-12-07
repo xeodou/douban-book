@@ -43,8 +43,11 @@
 
 - (void)viewDidLoad
 {
+    //add this 2 lines:
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+//    if([self respondsToSelector:@selector(edgesForExtendedLayout)])
+  //      [self setEdgesForExtendedLayout:UIRectEdgeBottom];
     [self customNav];
     [self initData];
     [self loadRequest];

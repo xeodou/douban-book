@@ -23,6 +23,7 @@
 #import "UIHelper.h"
 #import "MTStatusBarOverlay.h"
 #import "MobClick.h"
+#import "Constants.h"
 
 @interface BookDetailViewController ()
 
@@ -142,6 +143,9 @@
 //    CGFloat keyboardTop = keyboardRect.origin.y;
     CGRect newTextViewFrame = self.popUpView.frame;
     newTextViewFrame.origin.y = 0;
+    if (SYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO(@"7.0")) {
+        newTextViewFrame.origin.y = 60;
+    }
     
     // Get the duration of the animation.
     NSValue *animationDurationValue = [userInfo objectForKey:UIKeyboardAnimationDurationUserInfoKey];

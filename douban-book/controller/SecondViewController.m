@@ -13,6 +13,7 @@
 #import "UIHelper.h"
 #import "BookResultViewController.h"
 #import "MobClick.h"
+#import "Constants.h"
 #import "ASIDownloadCache.h"
 
 #define TITLE @"title"
@@ -101,7 +102,16 @@
 
 - (BOOL)loadData:(NSData*)data
 {
-    NSArray *titles = [self regexTitles:[self genTf:data] query:@"//div[@class='article']/a"];
+    NSArray *titles = nil;
+    
+    if (SYSTEM_VERSION_GREATER_THAN(@"6.0") && SYSTEM_VERSION_LESS_THAN(@"7.0")) {
+        // IOS version equal 6.1.x
+        // Fix iOS 6.1 bug.
+        titles = [self regexTitlesForIos6_1_x:[self genTf:data] query:@"//div/div/div/a[@name]"];
+    } else {
+        titles = [self regexTitles:[self genTf:data] query:@"//div[@class='article']/div/div/a"];
+    }
+    
     NSArray *child = [self regexTags:[self genTf:data] query:@"//table[@class='tagCol']/tbody"];
     if(titles == nil|| child == nil || [titles count] < 1 || [child count] < 1){
         return NO;
@@ -125,13 +135,28 @@
     return tf;
 }
 
+- (NSArray*)regexTitlesForIos6_1_x:(TFHpple*)tf query:(NSString*)query
+{
+    
+    NSMutableArray *array = [[NSMutableArray alloc] init];
+    NSArray *elements = [tf searchWithXPathQuery:query];
+//    NSLog(@"%@", elements);
+    for(TFHppleElement *element in elements){
+        NSString *str = [[element attributes] objectForKey:@"name"];
+        NSLog(@"%@", str);
+        [array addObject:str];
+    }
+    return array;
+}
+
 - (NSArray*)regexTitles:(TFHpple*)tf query:(NSString*)query
 {
     NSMutableArray *array = [[NSMutableArray alloc] init];
     NSArray *elements = [tf searchWithXPathQuery:query];
+//    NSLog(@"%@", elements)
     for(TFHppleElement *element in elements){
         NSString *str = [[element attributes] objectForKey:@"name"];
-//        NSLog(@"%@", str);
+        NSLog(@"%@", str);
         [array addObject:str];
     }
     return array;

@@ -18,6 +18,8 @@
 #import "UserDB.h"
 #import "UIHelper.h"
 #import "MobClick.h"
+#import "PrettyDrawing.h"
+#import "Constants.h"
 
 
 @interface NSString (ParseCategory)
@@ -73,6 +75,11 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
+//    [self.navigationController.navigationBar setBarTintColor:[UIColor colorWithHex:0x5CAE68]];
+//    [self setNeedsStatusBarAppearanceUpdate];
+//    if ([self respondsToSelector:@selector(setEdgesForExtendedLayout:)]) {
+//        self.edgesForExtendedLayout=UIRectEdgeNone;
+//    }
     [self initData];
 }
 

@@ -14,16 +14,18 @@
 		E60FDF2D16C2014700A656BE /* addBookComment_privacy_c_p.png in Resources */ = {isa = PBXBuildFile; fileRef = E60FDF2616C2014700A656BE /* addBookComment_privacy_c_p.png */; };
 		E60FDF2E16C2014700A656BE /* addBookComment_privacy_unc_n.png in Resources */ = {isa = PBXBuildFile; fileRef = E60FDF2716C2014700A656BE /* addBookComment_privacy_unc_n.png */; };
 		E60FDF2F16C2014700A656BE /* addBookComment_privacy_unc_p.png in Resources */ = {isa = PBXBuildFile; fileRef = E60FDF2816C2014700A656BE /* addBookComment_privacy_unc_p.png */; };
+		E61D6F641841C2D000E819DA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E61D6F631841C2D000E819DA /* Images.xcassets */; };
 		E62DD0D216982D4400023018 /* TFHpple.m in Sources */ = {isa = PBXBuildFile; fileRef = E62DD0CD16982D4400023018 /* TFHpple.m */; };
 		E62DD0D316982D4400023018 /* TFHppleElement.m in Sources */ = {isa = PBXBuildFile; fileRef = E62DD0CF16982D4400023018 /* TFHppleElement.m */; };
 		E62DD0D416982D4400023018 /* XPathQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = E62DD0D116982D4400023018 /* XPathQuery.m */; };
-		E62DD0D616982E0600023018 /* libxml2.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E62DD0D516982E0600023018 /* libxml2.2.dylib */; };
 		E62DD1011698480D00023018 /* HTMLNode.m in Sources */ = {isa = PBXBuildFile; fileRef = E62DD0FE1698480D00023018 /* HTMLNode.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		E62DD1021698480D00023018 /* HTMLParser.m in Sources */ = {isa = PBXBuildFile; fileRef = E62DD1001698480D00023018 /* HTMLParser.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		E632966716C0DF8800C6661B /* search_cell_div.png in Resources */ = {isa = PBXBuildFile; fileRef = E632966416C0DF8800C6661B /* search_cell_div.png */; };
 		E632966816C0DF8800C6661B /* search_delete_n.png in Resources */ = {isa = PBXBuildFile; fileRef = E632966516C0DF8800C6661B /* search_delete_n.png */; };
 		E632966916C0DF8800C6661B /* search_delete_p.png in Resources */ = {isa = PBXBuildFile; fileRef = E632966616C0DF8800C6661B /* search_delete_p.png */; };
 		E632966C16C0E08500C6661B /* HistoryCellCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E632966B16C0E08500C6661B /* HistoryCellCell.m */; };
+		E63BD09B185396C0005E99AE /* libMobClickLibrary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E6B6EA1A16C39363001B41D4 /* libMobClickLibrary.a */; };
+		E63BD09C1853971B005E99AE /* libzbar.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E6833AA516B6978A00E87C83 /* libzbar.a */; };
 		E63D068E16BFDC8100AA04F5 /* AnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E63D068D16BFDC8000AA04F5 /* AnimationViewController.m */; };
 		E63D069116BFEB7900AA04F5 /* AnimationCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E63D069016BFEB7900AA04F5 /* AnimationCell.m */; };
 		E650DD0616C0E5B800B43C74 /* keyboad_hidden_n.png in Resources */ = {isa = PBXBuildFile; fileRef = E650DD0416C0E5B800B43C74 /* keyboad_hidden_n.png */; };
@@ -43,7 +45,7 @@
 		E678E1DA168EE568000C9EF0 /* BookReview.m in Sources */ = {isa = PBXBuildFile; fileRef = E678E1D9168EE568000C9EF0 /* BookReview.m */; };
 		E678E1DE168EE82A000C9EF0 /* Collection.m in Sources */ = {isa = PBXBuildFile; fileRef = E678E1DD168EE82A000C9EF0 /* Collection.m */; };
 		E678E1E1168EE9EE000C9EF0 /* Annotation.m in Sources */ = {isa = PBXBuildFile; fileRef = E678E1E0168EE9EE000C9EF0 /* Annotation.m */; };
-		E67933821697F6B6009424B2 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E67933811697F6B6009424B2 /* libxml2.dylib */; };
+		E67933821697F6B6009424B2 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E67933811697F6B6009424B2 /* libxml2.dylib */; settings = {ATTRIBUTES = (Required, ); }; };
 		E67933841697F6CF009424B2 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E67933831697F6CF009424B2 /* libz.dylib */; };
 		E67933861697F6DD009424B2 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E67933851697F6DD009424B2 /* CFNetwork.framework */; };
 		E67933881697F6E6009424B2 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E67933871697F6E6009424B2 /* Security.framework */; };
@@ -109,7 +111,6 @@
 		E682D83716AD924D00393EFA /* nav_bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E682D83616AD924D00393EFA /* nav_bg@2x.png */; };
 		E682E60516B42BA70005E8A0 /* AutoTagView.m in Sources */ = {isa = PBXBuildFile; fileRef = E682E60416B42BA60005E8A0 /* AutoTagView.m */; };
 		E6833A7116B6587A00E87C83 /* AnimatedGif.m in Sources */ = {isa = PBXBuildFile; fileRef = E6833A7016B6587A00E87C83 /* AnimatedGif.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		E6833AAB16B6978A00E87C83 /* libzbar.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E6833AA516B6978A00E87C83 /* libzbar.a */; };
 		E6833AAC16B6978A00E87C83 /* zbar-back.png in Resources */ = {isa = PBXBuildFile; fileRef = E6833AA716B6978A00E87C83 /* zbar-back.png */; };
 		E6833AAD16B6978A00E87C83 /* zbar-help.html in Resources */ = {isa = PBXBuildFile; fileRef = E6833AA816B6978A00E87C83 /* zbar-help.html */; };
 		E6833AAE16B6978A00E87C83 /* zbar-helpicons.png in Resources */ = {isa = PBXBuildFile; fileRef = E6833AA916B6978A00E87C83 /* zbar-helpicons.png */; };
@@ -189,7 +190,6 @@
 		E6ACF4B0168B4C9100C249FC /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E6ACF4AD168B4C9100C249FC /* FirstViewController.m */; };
 		E6ACF4B1168B4C9100C249FC /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E6ACF4AF168B4C9100C249FC /* SecondViewController.m */; };
 		E6ACF4BE168B4D2B00C249FC /* ThridViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E6ACF4BD168B4D2B00C249FC /* ThridViewController.m */; };
-		E6B6EA1C16C39363001B41D4 /* libMobClickLibrary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E6B6EA1A16C39363001B41D4 /* libMobClickLibrary.a */; };
 		E6D59AE616AC536400C367F7 /* nav_btn_back_p.png in Resources */ = {isa = PBXBuildFile; fileRef = E6D59AE516AC536400C367F7 /* nav_btn_back_p.png */; };
 		E6E92EA116B5092F002959D2 /* BookDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E6E92EA016B5092F002959D2 /* BookDetailViewController.m */; };
 		E6E92EA416B509AD002959D2 /* book_status_sege_bg_n.png in Resources */ = {isa = PBXBuildFile; fileRef = E6E92EA216B509AD002959D2 /* book_status_sege_bg_n.png */; };
@@ -241,6 +241,8 @@
 		E60FDF2616C2014700A656BE /* addBookComment_privacy_c_p.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = addBookComment_privacy_c_p.png; sourceTree = "<group>"; };
 		E60FDF2716C2014700A656BE /* addBookComment_privacy_unc_n.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = addBookComment_privacy_unc_n.png; sourceTree = "<group>"; };
 		E60FDF2816C2014700A656BE /* addBookComment_privacy_unc_p.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = addBookComment_privacy_unc_p.png; sourceTree = "<group>"; };
+		E61D6F631841C2D000E819DA /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		E62A55AA1840834C00A77E87 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		E62DD0CC16982D4400023018 /* TFHpple.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFHpple.h; sourceTree = "<group>"; };
 		E62DD0CD16982D4400023018 /* TFHpple.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFHpple.m; sourceTree = "<group>"; };
 		E62DD0CE16982D4400023018 /* TFHppleElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFHppleElement.h; sourceTree = "<group>"; };
@@ -271,6 +273,7 @@
 		E650DD2B16C15E9A00B43C74 /* Top250ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Top250ViewController.m; sourceTree = "<group>"; };
 		E650DD4416C177E200B43C74 /* LoadMoreTableFooterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoadMoreTableFooterView.h; sourceTree = "<group>"; };
 		E650DD4516C177E200B43C74 /* LoadMoreTableFooterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoadMoreTableFooterView.m; sourceTree = "<group>"; };
+		E661EA9C1841B77500732EF1 /* icon_120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_120.png; sourceTree = "<group>"; };
 		E67618EF168CA4A2003ECA9D /* CustomGridCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomGridCell.h; sourceTree = "<group>"; };
 		E67618F0168CA4A2003ECA9D /* CustomGridCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomGridCell.m; sourceTree = "<group>"; };
 		E678E1BD168EBF46000C9EF0 /* DoubanUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DoubanUser.h; sourceTree = "<group>"; };
@@ -556,6 +559,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E63BD09C1853971B005E99AE /* libzbar.a in Frameworks */,
+				E63BD09B185396C0005E99AE /* libMobClickLibrary.a in Frameworks */,
 				E68564DA16BE19ED00990E43 /* libsqlite3.dylib in Frameworks */,
 				E6833AB716B6981A00E87C83 /* libiconv.dylib in Frameworks */,
 				E67B0A7116A8489C00627764 /* QuartzCore.framework in Frameworks */,
@@ -564,7 +569,6 @@
 				E6833AB116B697D500E87C83 /* AVFoundation.framework in Frameworks */,
 				E68194E716994B4E0043B5AF /* libDoubanAPIEngine.a in Frameworks */,
 				E68E3F7D16B6C2CC0079D939 /* CoreMedia.framework in Frameworks */,
-				E62DD0D616982E0600023018 /* libxml2.2.dylib in Frameworks */,
 				E679338C1697F6FA009424B2 /* MobileCoreServices.framework in Frameworks */,
 				E679338A1697F6F1009424B2 /* SystemConfiguration.framework in Frameworks */,
 				E67933881697F6E6009424B2 /* Security.framework in Frameworks */,
@@ -576,8 +580,6 @@
 				E6F488E01670F0B4000B15B2 /* CoreGraphics.framework in Frameworks */,
 				E6827887168E01D300FCA7A2 /* ImageIO.framework in Frameworks */,
 				E684630216988CDC00E5B303 /* SDWebImage.framework in Frameworks */,
-				E6833AAB16B6978A00E87C83 /* libzbar.a in Frameworks */,
-				E6B6EA1C16C39363001B41D4 /* libMobClickLibrary.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -615,6 +617,13 @@
 				E650DD4516C177E200B43C74 /* LoadMoreTableFooterView.m */,
 			);
 			path = LoadMoreTableFooterView;
+			sourceTree = "<group>";
+		};
+		E661EA9B1840C54500732EF1 /* iPad */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = iPad;
 			sourceTree = "<group>";
 		};
 		E678E1BB168EBEC7000C9EF0 /* classes */ = {
@@ -1160,6 +1169,8 @@
 		E6F488CC1670F0B4000B15B2 = {
 			isa = PBXGroup;
 			children = (
+				E661EA9C1841B77500732EF1 /* icon_120.png */,
+				E62A55AA1840834C00A77E87 /* Default-568h@2x.png */,
 				E6A9008D16C1937800EF5CC6 /* icon.png */,
 				E6A9008B16C1937500EF5CC6 /* icon@2x.png */,
 				E6A9008916C1922D00EF5CC6 /* Default.png */,
@@ -1207,6 +1218,7 @@
 		E6F488E11670F0B4000B15B2 /* douban-book */ = {
 			isa = PBXGroup;
 			children = (
+				E661EA9B1840C54500732EF1 /* iPad */,
 				E678E1BB168EBEC7000C9EF0 /* classes */,
 				E6827834168DF2D500FCA7A2 /* frame */,
 				E6ACF4B2168B4CC700C249FC /* images */,
@@ -1216,6 +1228,7 @@
 				E6F488EB1670F0B4000B15B2 /* AppDelegate.m */,
 				E62DD0E7169834C400023018 /* Constants.h */,
 				E682D83316AD8EE500393EFA /* MainStoryboard.storyboard */,
+				E61D6F631841C2D000E819DA /* Images.xcassets */,
 				E6F488E21670F0B4000B15B2 /* Supporting Files */,
 			);
 			path = "douban-book";
@@ -1356,6 +1369,7 @@
 				E685923916B7C7EC0046FBD2 /* nav_close_p.png in Resources */,
 				E685923A16B7C7EC0046FBD2 /* nav_keyboard_n.png in Resources */,
 				E685923B16B7C7EC0046FBD2 /* nav_keyboard_p.png in Resources */,
+				E61D6F641841C2D000E819DA /* Images.xcassets in Resources */,
 				E685923C16B7C7EC0046FBD2 /* sanner_content_board.png in Resources */,
 				E685923E16B7C8190046FBD2 /* scaner_bg.png in Resources */,
 				E67959CD16BA740600C78FF3 /* nav_complete_n.png in Resources */,
@@ -1554,7 +1568,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PROVISIONING_PROFILE = "";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
-				SDKROOT = iphoneos;
+				SDKROOT = iphoneos7.0;
 				SKIP_INSTALL = NO;
 			};
 			name = Debug;
@@ -1577,7 +1591,7 @@
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				PROVISIONING_PROFILE = "";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
-				SDKROOT = iphoneos;
+				SDKROOT = iphoneos7.0;
 				SKIP_INSTALL = NO;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -1586,12 +1600,22 @@
 		E6F489161670F0B5000B15B2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)\"",
 					"\"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/Developer/Library/Frameworks\"",
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				"FRAMEWORK_SEARCH_PATHS[arch=*]" = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+					"\"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/Developer/Library/Frameworks\"",
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+					"/Users/xeodou/mycode/ios/douban-book/douban-book/frame/umeng",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "douban-book/douban-book-Prefix.pch";
@@ -1602,18 +1626,20 @@
 					"$(SDKROOT)/usr/include/libxml2",
 				);
 				INFOPLIST_FILE = "douban-book/douban-book-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SDKROOT)/usr/lib/system\"",
-					"\"$(SRCROOT)/build/Debug-iphonesimulator\"",
-					"\"$(SRCROOT)/douban-book/frame/ZBarSDK\"",
-					"\"$(SRCROOT)/douban-book/frame/umeng\"",
+					"\\\\\\\"$(SDKROOT)/usr/lib/system\\\\\\\"",
+					"\\\\\\\"$(SRCROOT)/build/Debug-iphonesimulator\\\\\\\"",
+					"/Users/xeodou/mycode/ios/douban-book/douban-book/frame/umeng",
+					"/Users/xeodou/mycode/ios/douban-book/douban-book/frame/ZBarSDK",
 				);
 				OTHER_LDFLAGS = (
 					"-all_load",
 					"-ObjC",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				USER_HEADER_SEARCH_PATHS = "";
 				WRAPPER_EXTENSION = app;
 			};
@@ -1622,12 +1648,15 @@
 		E6F489171670F0B5000B15B2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)\"",
 					"\"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/Developer/Library/Frameworks\"",
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+					"/Users/xeodou/mycode/ios/douban-book/douban-book/frame/umeng",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "douban-book/douban-book-Prefix.pch";
@@ -1638,18 +1667,20 @@
 					"$(SDKROOT)/usr/include/libxml2",
 				);
 				INFOPLIST_FILE = "douban-book/douban-book-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SDKROOT)/usr/lib/system\"",
-					"\"$(SRCROOT)/build/Debug-iphonesimulator\"",
-					"\"$(SRCROOT)/douban-book/frame/ZBarSDK\"",
-					"\"$(SRCROOT)/douban-book/frame/umeng\"",
+					"\\\\\\\"$(SDKROOT)/usr/lib/system\\\\\\\"",
+					"\\\\\\\"$(SRCROOT)/build/Debug-iphonesimulator\\\\\\\"",
+					"/Users/xeodou/mycode/ios/douban-book/douban-book/frame/umeng",
+					"/Users/xeodou/mycode/ios/douban-book/douban-book/frame/ZBarSDK",
 				);
 				OTHER_LDFLAGS = (
 					"-all_load",
 					"-ObjC",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				USER_HEADER_SEARCH_PATHS = "";
 				WRAPPER_EXTENSION = app;
 			};

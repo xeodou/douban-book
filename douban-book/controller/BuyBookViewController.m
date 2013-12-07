@@ -22,6 +22,7 @@
 
 @property (nonatomic, strong) NSMutableArray *array;
 @property (nonatomic, strong) MBProgressHUD *hud ;
+
 @end
 
 @implementation BuyBookViewController
@@ -59,7 +60,11 @@
         return;
     }
     NSString *str = [NSString stringWithFormat:@"http://book.douban.com/subject/%@/buylinks", bookId];
-    ASIHTTPRequest *request = [ASIHTTPRequest requestWithURL:[NSURL URLWithString:str]];
+    [self requestUrl:str];
+}
+
+- (void) requestUrl:(NSString*)url {
+    ASIHTTPRequest *request = [ASIHTTPRequest requestWithURL:[NSURL URLWithString:url]];
     [request setCachePolicy:ASIUseDefaultCachePolicy];
     [request setDelegate:self];
     [request startAsynchronous];
@@ -101,7 +106,7 @@
 - (BOOL)loadData:(NSData*)data
 {
     TFHpple *tf = [[TFHpple alloc] initWithHTMLData:data];
-    NSLog(@"%@",[tf searchWithXPathQuery:@"//div[@class='indent']/table/tbody/tr"] );
+//    NSLog(@"%@",[tf searchWithXPathQuery:@"//div[@class='indent']/table"] );
     NSArray *arr = [tf searchWithXPathQuery:@"//div[@class='indent']/table"];
     if ([arr count] <= 0) {
         return NO;
@@ -132,8 +137,8 @@
                         NSLog(@"%@", str);
                         [dic setObject:str forKey:NEWPRICE];
                         str = [[(TFHppleElement*)[child objectAtIndex:0] attributes] objectForKey:@"href"];
-                        NSLog(@"%@", str);
-                        [dic setObject:str forKey:URL];
+                        NSLog(@"%@", [self decodeFromPercentEscapeString:str]);
+                        [dic setObject:[self decodeFromPercentEscapeString:str] forKey:URL];
                     } else if (str != nil) {
                         NSLog(@"%@", str);
                         str = [str stringByReplacingOccurrencesOfString:@" " withString:@""];
@@ -155,13 +160,21 @@
                     }
                 }
             }
-            [merchants addObject:dic];
+            if ([dic count] > 0) [merchants addObject:dic];
         }
     }
     if(merchants == nil || [merchants count] <= 0)
         return NO;
     [array addObjectsFromArray:merchants];
     return YES;
+}
+
+// Decode a percent escape encoded string.
+- (NSString*) decodeFromPercentEscapeString:(NSString *) string {
+    return (__bridge NSString *) CFURLCreateStringByReplacingPercentEscapesUsingEncoding(NULL,
+                                                                                         (__bridge CFStringRef) string,
+                                                                                         CFSTR(""),
+                                                                                         kCFStringEncodingUTF8);
 }
 
 //判断是否为整形：
@@ -223,6 +236,10 @@
 - (void)buyItemCellBtnClick:(NSString *)str
 {
     [MobClick event:@"buy"];
+    NSRange start = [str rangeOfString:@"buylink&url="];
+    if (start.location != NSNotFound) {
+        str = [str substringFromIndex:start.location + start.length];
+    }
     [[UIApplication sharedApplication] openURL:[NSURL URLWithString:str]];
 }
 

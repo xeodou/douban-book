@@ -20,6 +20,7 @@
 }
 @property (strong, nonatomic) IBOutlet UIView *CoverView;
 @property (strong, nonatomic) IBOutlet UIView *editView;
+@property (strong, nonatomic) IBOutlet UIView *bottomView;
 @property (weak, nonatomic) IBOutlet UITextField *isbnEdit;
 @property (strong, nonatomic) UIViewController *parent;
 @property (strong, nonatomic) id<ScanerViewDelegate> delegate;

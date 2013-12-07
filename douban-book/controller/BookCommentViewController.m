@@ -133,7 +133,7 @@ NSString * const cTitle = @"title";
 - (BOOL)loadData:(NSData*)data
 {
     TFHpple *tf = [[TFHpple alloc] initWithHTMLData:data];
-    NSArray *arr = [tf searchWithXPathQuery:@"//div[@class='ctsh']/div[@class='tlst']"];
+    NSArray *arr = [tf searchWithXPathQuery:@"//div[@class='ctsh']/div"];
     NSMutableArray *a = [[NSMutableArray alloc] init];
     for (TFHppleElement *element in arr) {
         NSArray *array = [element childrenWithTagName:@"div"];
@@ -156,7 +156,8 @@ NSString * const cTitle = @"title";
             [dic setObject:str forKey:cId];
             e = [array objectAtIndex:2];
             e = [e firstChildWithTagName:@"div"];
-            str = [[e firstChild] content];
+//            NSLog(@"%@", [[[e firstChildWithTagName:@"span"] firstChild] content]);
+            str = [[[e firstChildWithTagName:@"span"] firstChild] content];
             str = [str stringByReplacingOccurrencesOfString:@" " withString:@""];
             str = [str stringByReplacingOccurrencesOfString:@"\n" withString:@""];
             [dic setObject:str forKey:cAbstract];
