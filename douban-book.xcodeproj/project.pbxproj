@@ -35,6 +35,7 @@
 		E650DD1116C0EAF400B43C74 /* search_bar_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = E650DD0E16C0EAF400B43C74 /* search_bar_icon.png */; };
 		E650DD2C16C15E9A00B43C74 /* Top250ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E650DD2B16C15E9A00B43C74 /* Top250ViewController.m */; };
 		E650DD4616C177E200B43C74 /* LoadMoreTableFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = E650DD4516C177E200B43C74 /* LoadMoreTableFooterView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		E661331818577C3400F7E6A5 /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E661331718577C3400F7E6A5 /* Crashlytics.framework */; };
 		E67618F1168CA4A2003ECA9D /* CustomGridCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E67618F0168CA4A2003ECA9D /* CustomGridCell.m */; };
 		E678E1BF168EBF46000C9EF0 /* DoubanUser.m in Sources */ = {isa = PBXBuildFile; fileRef = E678E1BE168EBF46000C9EF0 /* DoubanUser.m */; };
 		E678E1C2168EC47B000C9EF0 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = E678E1C1168EC47B000C9EF0 /* User.m */; };
@@ -273,6 +274,7 @@
 		E650DD2B16C15E9A00B43C74 /* Top250ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Top250ViewController.m; sourceTree = "<group>"; };
 		E650DD4416C177E200B43C74 /* LoadMoreTableFooterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoadMoreTableFooterView.h; sourceTree = "<group>"; };
 		E650DD4516C177E200B43C74 /* LoadMoreTableFooterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoadMoreTableFooterView.m; sourceTree = "<group>"; };
+		E661331718577C3400F7E6A5 /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = "<group>"; };
 		E661EA9C1841B77500732EF1 /* icon_120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_120.png; sourceTree = "<group>"; };
 		E67618EF168CA4A2003ECA9D /* CustomGridCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomGridCell.h; sourceTree = "<group>"; };
 		E67618F0168CA4A2003ECA9D /* CustomGridCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomGridCell.m; sourceTree = "<group>"; };
@@ -569,6 +571,7 @@
 				E6833AB116B697D500E87C83 /* AVFoundation.framework in Frameworks */,
 				E68194E716994B4E0043B5AF /* libDoubanAPIEngine.a in Frameworks */,
 				E68E3F7D16B6C2CC0079D939 /* CoreMedia.framework in Frameworks */,
+				E661331818577C3400F7E6A5 /* Crashlytics.framework in Frameworks */,
 				E679338C1697F6FA009424B2 /* MobileCoreServices.framework in Frameworks */,
 				E679338A1697F6F1009424B2 /* SystemConfiguration.framework in Frameworks */,
 				E67933881697F6E6009424B2 /* Security.framework in Frameworks */,
@@ -1192,6 +1195,7 @@
 		E6F488DA1670F0B4000B15B2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				E661331718577C3400F7E6A5 /* Crashlytics.framework */,
 				E68564D916BE19ED00990E43 /* libsqlite3.dylib */,
 				E68E3F7C16B6C2CC0079D939 /* CoreMedia.framework */,
 				E6833AB616B6981A00E87C83 /* libiconv.dylib */,
@@ -1256,6 +1260,7 @@
 				E6F488D31670F0B4000B15B2 /* Sources */,
 				E6F488D41670F0B4000B15B2 /* Frameworks */,
 				E6F488D51670F0B4000B15B2 /* Resources */,
+				E661331518577AC200F7E6A5 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -1274,6 +1279,11 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0430;
+				TargetAttributes = {
+					E6F488D61670F0B4000B15B2 = {
+						DevelopmentTeam = D2W7W7D6BY;
+					};
+				};
 			};
 			buildConfigurationList = E6F488D11670F0B4000B15B2 /* Build configuration list for PBXProject "douban-book" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -1421,6 +1431,22 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		E661331518577AC200F7E6A5 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "./Crashlytics.framework/run f389ccec1c77fac84e659e92517fee1385003d12";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E6F488D31670F0B4000B15B2 /* Sources */ = {
@@ -1602,12 +1628,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)\"",
-					"\"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/Developer/Library/Frameworks\"",
+					"$(SRCROOT)",
+					"\\\"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/Developer/Library/Frameworks\\\"",
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+					"/Users/xeodou/mycode/ios/douban-book",
 				);
 				"FRAMEWORK_SEARCH_PATHS[arch=*]" = (
 					"$(inherited)",
@@ -1639,6 +1668,7 @@
 					"-ObjC",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 1;
 				USER_HEADER_SEARCH_PATHS = "";
 				WRAPPER_EXTENSION = app;
@@ -1650,13 +1680,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)\"",
-					"\"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/Developer/Library/Frameworks\"",
+					"$(SRCROOT)",
+					"\\\"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/Developer/Library/Frameworks\\\"",
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
 					"/Users/xeodou/mycode/ios/douban-book/douban-book/frame/umeng",
+					"/Users/xeodou/mycode/ios/douban-book",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "douban-book/douban-book-Prefix.pch";
@@ -1680,6 +1713,7 @@
 					"-ObjC",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 1;
 				USER_HEADER_SEARCH_PATHS = "";
 				WRAPPER_EXTENSION = app;

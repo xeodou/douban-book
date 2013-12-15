@@ -17,6 +17,8 @@
 
 
 @property (nonatomic, strong) ZBarReaderView *zbarView;
+@property (nonatomic, strong) ZBarCameraSimulator *cameraSim;
+
 @end
 
 @implementation ScanerViewController
@@ -27,6 +29,7 @@
 @synthesize delegate;
 @synthesize zbarView;
 @synthesize bottomView;
+@synthesize cameraSim;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -57,7 +60,9 @@
             zbarView.frame = CGRectMake(0, 0, 320, 568);
             CoverView.frame = CGRectMake(0, 0, 320, 568);
             CGRect frame = bottomView.frame;
-            frame.origin.y = frame.origin.y + 88;
+            if (frame.origin.y < 500) {
+                frame.origin.y = frame.origin.y + 88;
+            }
             bottomView.frame = frame;
         }
     } else {
@@ -77,6 +82,11 @@
     [self.view addSubview:zbarView];
     [self.view addSubview:CoverView];
     [zbarView start];
+    if(TARGET_IPHONE_SIMULATOR) {
+        cameraSim = [[ZBarCameraSimulator alloc]
+                     initWithViewController: self];
+        cameraSim.readerView = zbarView;
+    }
     hud.customView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"37x-Checkmark.png"]];
     hud.mode = MBProgressHUDModeCustomView;
     hud.labelText = NSLocalizedString(@"hud_info_complete", nil);
@@ -94,20 +104,36 @@
         NSLog(@"%@", symbolStr);
         [self goToSearch:symbolStr];
     }
+}
 
+-(void) imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info
+{
+    // 得到条形码结果
+    id<NSFastEnumeration> results =
+    [info objectForKey: ZBarReaderControllerResults];
+    ZBarSymbol *symbol = nil;
+    for(symbol in results)
+        break;
+    //获得到条形码
+    NSString *symbolStr=symbol.data;
+    NSLog(@"%@", symbolStr);
+
+    //扫描界面退出
+    [picker dismissModalViewControllerAnimated: YES];
 }
 
 - (void) viewDidAppear:(BOOL)animated
 {
     if (zbarView != nil) {
-//        [zbarView start];
+        [zbarView start];
     }
 }
 
 - (void)viewDidDisappear:(BOOL)animated
 {
     if (zbarView != nil) {
-        [zbarView stop];
+        if(!TARGET_IPHONE_SIMULATOR)
+            [zbarView stop];
     }
 }
 
@@ -166,8 +192,8 @@
     
     CGFloat keyboardTop = keyboardRect.origin.y;
     CGRect newTextViewFrame = self.view.bounds;
-    newTextViewFrame.origin.y = -(self.editView.frame.size.height - keyboardTop);
-    
+    newTextViewFrame.origin.y = -(480 - keyboardTop);
+
     // Get the duration of the animation.
     NSValue *animationDurationValue = [userInfo objectForKey:UIKeyboardAnimationDurationUserInfoKey];
     NSTimeInterval animationDuration;

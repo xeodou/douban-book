@@ -104,7 +104,7 @@
 {
     NSArray *titles = nil;
     
-    if (SYSTEM_VERSION_GREATER_THAN(@"6.0") && SYSTEM_VERSION_LESS_THAN(@"7.0")) {
+    if (SYSTEM_VERSION_GREATER_THAN(@"6.0")) {
         // IOS version equal 6.1.x
         // Fix iOS 6.1 bug.
         titles = [self regexTitlesForIos6_1_x:[self genTf:data] query:@"//div/div/div/a[@name]"];

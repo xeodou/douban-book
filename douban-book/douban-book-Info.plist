@@ -21,13 +21,15 @@
 	<key>CFBundlePackageType</key>
 	<string>APPL</string>
 	<key>CFBundleShortVersionString</key>
-	<string>1.3</string>
+	<string>1.3.1</string>
 	<key>CFBundleSignature</key>
 	<string>????</string>
 	<key>CFBundleVersion</key>
-	<string>1.3</string>
+	<string>1.3.1</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>Pe</key>
+	<string></string>
 	<key>UIMainStoryboardFile</key>
 	<string>MainStoryboard</string>
 	<key>UIPrerenderedIcon</key>
@@ -44,7 +46,5 @@
 	</array>
 	<key>UIViewControllerBasedStatusBarAppearance</key>
 	<false/>
-	<key>Pe</key>
-	<string></string>
 </dict>
 </plist>

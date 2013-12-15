@@ -122,11 +122,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "douban-book/AppDelegate.m"
-            timestampString = "407699774.739793"
+            timestampString = "408386624.641073"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "124"
-            endingLineNumber = "124">
+            startingLineNumber = "127"
+            endingLineNumber = "127">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -136,11 +136,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "douban-book/controller/ScanerViewController.m"
-            timestampString = "407710809.475273"
+            timestampString = "408388489.694985"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "166"
-            endingLineNumber = "166"
+            startingLineNumber = "192"
+            endingLineNumber = "192"
             landmarkName = "-keyboardWillShow:"
             landmarkType = "5">
          </BreakpointContent>
@@ -152,11 +152,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "douban-book/controller/ScanerViewController.m"
-            timestampString = "407710809.475273"
+            timestampString = "408388489.694985"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "254"
-            endingLineNumber = "254"
+            startingLineNumber = "280"
+            endingLineNumber = "280"
             landmarkName = "-searchClick:"
             landmarkType = "5">
          </BreakpointContent>
@@ -748,6 +748,54 @@
             startingLineNumber = "115"
             endingLineNumber = "115"
             landmarkName = "-loadData:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "douban-book/controller/ScanerViewController.m"
+            timestampString = "408387194.515653"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "57"
+            endingLineNumber = "57"
+            landmarkName = "-addZbarView"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "douban-book/controller/ScanerViewController.m"
+            timestampString = "408388489.694985"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "194"
+            endingLineNumber = "194"
+            landmarkName = "-keyboardWillShow:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "douban-book/controller/ScanerViewController.m"
+            timestampString = "408388489.694985"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "195"
+            endingLineNumber = "195"
+            landmarkName = "-keyboardWillShow:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
