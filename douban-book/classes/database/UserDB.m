@@ -51,12 +51,26 @@
         NSMutableDictionary *dic = [[NSMutableDictionary alloc] init];
         [dic setObject:[res stringForColumn:@"name"] forKey:@"name"];
         [dic setObject:[res stringForColumn:@"uid"] forKey:@"uid"];
-        [dic setObject:[res stringForColumn:@"intro"] forKey:@"desc"];
-        [dic setObject:[res stringForColumn:@"alt"] forKey:@"alt"];
-        [dic setObject:[res stringForColumn:@"avatar"] forKey:@"avatar"];
-        [dic setObject:[res stringForColumn:@"locid"] forKey:@"loc_id"];
-        [dic setObject:[res stringForColumn:@"locname"] forKey:@"loc_name"];
-        [dic setObject:[res stringForColumn:@"created"] forKey:@"created"];
+        if (nil == [res stringForColumn:@"intro"] ) {
+            [dic setObject:@"..." forKey:@"desc"];
+        } else {
+            [dic setObject:[res stringForColumn:@"intro"] forKey:@"desc"];
+        }
+        if (nil != [res stringForColumn:@"alt"]) {
+            [dic setObject:[res stringForColumn:@"alt"] forKey:@"alt"];
+        }
+        if (nil != [res stringForColumn:@"avatar"]) {
+            [dic setObject:[res stringForColumn:@"avatar"] forKey:@"avatar"];
+        }
+        if (nil != [res stringForColumn:@"locid"]) {
+            [dic setObject:[res stringForColumn:@"locid"] forKey:@"loc_id"];
+        }
+        if (nil != [res stringForColumn:@"locname"]){
+            [dic setObject:[res stringForColumn:@"locname"] forKey:@"loc_name"];
+        }
+        if (nil != [res stringForColumn:@"created"]) {
+            [dic setObject:[res stringForColumn:@"created"] forKey:@"created"];
+        }
         user = [[DOUUser alloc] initWithDictionary:dic];
     }
     [res close];
