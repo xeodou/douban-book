@@ -1688,7 +1688,7 @@
 					"\\\"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/Developer/Library/Frameworks\\\"",
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
-					"/Users/xeodou/mycode/ios/douban-book",
+					"$(PROJECT_DIR)/douban-book",
 					"$(PROJECT_DIR)",
 				);
 				"FRAMEWORK_SEARCH_PATHS[arch=*]" = (
@@ -1697,7 +1697,7 @@
 					"\"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/Developer/Library/Frameworks\"",
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
-					"/Users/xeodou/mycode/ios/douban-book/douban-book/frame/umeng",
+					"$(PROJECT_DIR)/douban-book/frame/umeng",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "douban-book/douban-book-Prefix.pch";
@@ -1713,8 +1713,8 @@
 					"$(inherited)",
 					"\\\\\\\"$(SDKROOT)/usr/lib/system\\\\\\\"",
 					"\\\\\\\"$(SRCROOT)/build/Debug-iphonesimulator\\\\\\\"",
-					"/Users/xeodou/mycode/ios/douban-book/douban-book/frame/umeng",
-					"/Users/xeodou/mycode/ios/douban-book/douban-book/frame/ZBarSDK",
+					"$(PROJECT_DIR)/douban-book/frame/umeng",
+					"$(PROJECT_DIR)/douban-book/frame/ZBarSDK",
 				);
 				OTHER_LDFLAGS = (
 					"-all_load",
@@ -1741,8 +1741,7 @@
 					"\\\"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/Developer/Library/Frameworks\\\"",
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
-					"/Users/xeodou/mycode/ios/douban-book/douban-book/frame/umeng",
-					"/Users/xeodou/mycode/ios/douban-book",
+					"$(PROJECT_DIR)/douban-book/frame/umeng",
 					"$(PROJECT_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -1759,8 +1758,8 @@
 					"$(inherited)",
 					"\\\\\\\"$(SDKROOT)/usr/lib/system\\\\\\\"",
 					"\\\\\\\"$(SRCROOT)/build/Debug-iphonesimulator\\\\\\\"",
-					"/Users/xeodou/mycode/ios/douban-book/douban-book/frame/umeng",
-					"/Users/xeodou/mycode/ios/douban-book/douban-book/frame/ZBarSDK",
+					"$(PROJECT_DIR)/douban-book/frame/umeng",
+					"$(PROJECT_DIR)/douban-book/frame/ZBarSDK",
 				);
 				OTHER_LDFLAGS = (
 					"-all_load",
