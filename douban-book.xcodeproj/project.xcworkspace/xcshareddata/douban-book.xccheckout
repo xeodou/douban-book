@@ -10,29 +10,29 @@
 	<string>douban-book</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>1318C4DF-9276-4D10-92B8-E0DF6495935A</key>
+		<key>4D8A2A22C4D39B54F83C9D4BB50F7276B8478977</key>
 		<string>ssh://bitbucket.org/xeodou/douban-book.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>douban-book.xcodeproj/project.xcworkspace</string>
+	<string>douban-book.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>1318C4DF-9276-4D10-92B8-E0DF6495935A</key>
+		<key>4D8A2A22C4D39B54F83C9D4BB50F7276B8478977</key>
 		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>ssh://bitbucket.org/xeodou/douban-book.git</string>
 	<key>IDESourceControlProjectVersion</key>
-	<integer>110</integer>
+	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>1318C4DF-9276-4D10-92B8-E0DF6495935A</string>
+	<string>4D8A2A22C4D39B54F83C9D4BB50F7276B8478977</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>1318C4DF-9276-4D10-92B8-E0DF6495935A</string>
+			<string>4D8A2A22C4D39B54F83C9D4BB50F7276B8478977</string>
 			<key>IDESourceControlWCCName</key>
 			<string>douban-book</string>
 		</dict>

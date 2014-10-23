@@ -72,6 +72,11 @@
     if ([UtilHelper isLogin] && isbn == nil && isSelect == -1) {
         [self getMybookState];
     }
+
+}
+
+- (void) closeAd {
+    [self.view setHidden:YES];
 }
 
 - (void) initData
@@ -456,6 +461,7 @@
 
 
 - (IBAction)showDialog:(id)sender {
+    UIButton *btn = (UIButton *)sender;
     if (![[bookReview text] isEqual:@"点击添加书评"]) {
         [commentTextview setText:[bookReview text]];
     }
@@ -463,7 +469,7 @@
     CGRect frame = popUpView.frame;
     frame.origin = CGPointMake(16, 100);
     [popUpView setFrame:frame];
-    [popUpView showFromPoint:[sender center]];
+    [popUpView showFromPoint:[btn center]];
     
 }
 

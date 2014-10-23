@@ -11,6 +11,8 @@
 #import "MobClick.h"
 #import "PrettyDrawing.h"
 #import "Constants.h"
+#import <Fabric/Fabric.h>
+#import <MoPub/MoPub.h>
 #import <Crashlytics/Crashlytics.h>
 
 @implementation AppDelegate
@@ -22,7 +24,7 @@
     // Override point for customization after application launch.
     [DBHelper createTable];
     [MobClick setCrashReportEnabled:NO];
-    [Crashlytics startWithAPIKey:@"f389ccec1c77fac84e659e92517fee1385003d12"];
+    [Fabric with:@[CrashlyticsKit, MoPubKit]];
     [MobClick startWithAppkey:@"51135b1c52701524db00001e" reportPolicy:BATCH channelId:@"appstore"];
     [MobClick checkUpdate];
     if (SYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO(@"7.0")) {

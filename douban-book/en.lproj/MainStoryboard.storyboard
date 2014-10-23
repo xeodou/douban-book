@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13A603" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="4">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14A388a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="4">
     <dependencies>
-        <deployment defaultVersion="1536" identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
     </dependencies>
     <scenes>
         <!--Scaner View Controller-->
@@ -182,7 +182,7 @@
             </objects>
             <point key="canvasLocation" x="960" y="-1976"/>
         </scene>
-        <!--Search View Controller - 搜索-->
+        <!--搜索-->
         <scene sceneID="jD5-iK-azV">
             <objects>
                 <viewController id="B4O-77-ERQ" customClass="SearchViewController" sceneMemberID="viewController">
@@ -313,7 +313,7 @@
             </objects>
             <point key="canvasLocation" x="1433" y="-415"/>
         </scene>
-        <!--Navigation Controller - 新书-->
+        <!--新书-->
         <scene sceneID="Efg-aY-0nf">
             <objects>
                 <navigationController definesPresentationContext="YES" id="PSf-Uz-kAD" sceneMemberID="viewController">
@@ -331,7 +331,7 @@
             </objects>
             <point key="canvasLocation" x="160" y="-710"/>
         </scene>
-        <!--First View Controller - First-->
+        <!--First-->
         <scene sceneID="11">
             <objects>
                 <viewController title="First" id="2" customClass="FirstViewController" sceneMemberID="viewController">
@@ -479,7 +479,7 @@
             </objects>
             <point key="canvasLocation" x="568" y="-720"/>
         </scene>
-        <!--Second View Controller - Second-->
+        <!--Second-->
         <scene sceneID="13">
             <objects>
                 <viewController title="Second" id="3" customClass="SecondViewController" sceneMemberID="viewController">
@@ -618,7 +618,7 @@
             </objects>
             <point key="canvasLocation" x="-390" y="146"/>
         </scene>
-        <!--Navigation Controller - 我读-->
+        <!--我读-->
         <scene sceneID="VZ2-N6-Tpw">
             <objects>
                 <navigationController definesPresentationContext="YES" id="Ert-jd-F1Y" sceneMemberID="viewController">
@@ -636,7 +636,7 @@
             </objects>
             <point key="canvasLocation" x="160" y="955"/>
         </scene>
-        <!--Thrid View Controller - 我读-->
+        <!--我读-->
         <scene sceneID="xkz-bS-yct">
             <objects>
                 <viewController id="ceZ-Mr-Beq" customClass="ThridViewController" sceneMemberID="viewController">
@@ -747,7 +747,7 @@
             </objects>
             <point key="canvasLocation" x="586" y="948"/>
         </scene>
-        <!--Book Detail View Controller - Title-->
+        <!--Title-->
         <scene sceneID="Zo1-uX-Ya0">
             <objects>
                 <viewController hidesBottomBarWhenPushed="YES" id="EZv-Rb-tQP" customClass="BookDetailViewController" sceneMemberID="viewController">
@@ -1208,7 +1208,6 @@
                         </imageView>
                     </subviews>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                 </view>
                 <view contentMode="scaleToFill" id="Ev5-N5-Xha" customClass="UAModalPanel">
                     <rect key="frame" x="0.0" y="0.0" width="282" height="200"/>
@@ -2230,7 +2229,7 @@
             </objects>
             <point key="canvasLocation" x="3393" y="377"/>
         </scene>
-        <!--Navigation Controller - 标签-->
+        <!--标签-->
         <scene sceneID="HtK-zh-F4r">
             <objects>
                 <navigationController definesPresentationContext="YES" id="Z4E-gh-V79" sceneMemberID="viewController">
@@ -2487,16 +2486,16 @@
         <image name="tab_newbook.png" width="30" height="25"/>
         <image name="tab_tags.png" width="24" height="30"/>
     </resources>
-    <color key="tintColor" red="0.41960784309999999" green="0.70588235290000001" blue="0.45882352939999999" alpha="1" colorSpace="calibratedRGB"/>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="keU-Dr-cTO"/>
+        <segue reference="wz3-t8-MqV"/>
+        <segue reference="o1q-Jt-kzw"/>
         <segue reference="lPg-bz-QX8"/>
-        <segue reference="gHP-7G-O7C"/>
-        <segue reference="2QK-Lx-CIZ"/>
+        <segue reference="ern-ZX-2uo"/>
     </inferredMetricsTieBreakers>
+    <color key="tintColor" red="0.41960784309999999" green="0.70588235290000001" blue="0.45882352939999999" alpha="1" colorSpace="calibratedRGB"/>
 </document>

@@ -17,9 +17,11 @@
 #import "RateView.h"
 
 @interface BookDetailViewController : CustomViewController<LoginCallDelegate>
+
 {
     DOUBook* mdouBook;
 }
+
 @property (weak, nonatomic) IBOutlet UILabel *bookReview;
 @property (weak, nonatomic) IBOutlet UIScrollView *mScrollview;
 @property (nonatomic, retain) DOUBook* mdouBook;
